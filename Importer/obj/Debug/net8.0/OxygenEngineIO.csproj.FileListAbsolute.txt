@@ -1,0 +1,11 @@
+C:\Users\suley\source\repos\OxygenEngine\Importer\bin\Debug\net8.0\OxygenEngineIO.deps.json
+C:\Users\suley\source\repos\OxygenEngine\Importer\bin\Debug\net8.0\OxygenEngineIO.dll
+C:\Users\suley\source\repos\OxygenEngine\Importer\bin\Debug\net8.0\OxygenEngineIO.pdb
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.AssemblyInfoInputs.cache
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.AssemblyInfo.cs
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.csproj.CoreCompileInputs.cache
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.dll
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\refint\OxygenEngineIO.dll
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\OxygenEngineIO.pdb
+C:\Users\suley\source\repos\OxygenEngine\Importer\obj\Debug\net8.0\ref\OxygenEngineIO.dll

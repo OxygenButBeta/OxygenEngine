@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Core", "OxygenEngine\OxygenEngine.Core.csproj", "{B40DC979-3656-48D0-920B-D2C493351623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Shaders", "OxygenEngine.Shaders\OxygenEngine.Shaders.csproj", "{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B40DC979-3656-48D0-920B-D2C493351623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40DC979-3656-48D0-920B-D2C493351623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40DC979-3656-48D0-920B-D2C493351623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40DC979-3656-48D0-920B-D2C493351623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE138AAF-DA82-4969-873F-4787A4BCBAF4}
+	EndGlobalSection
+EndGlobal
