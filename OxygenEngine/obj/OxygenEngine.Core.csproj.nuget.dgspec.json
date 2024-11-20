@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj": {}
+    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj": {
+    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj",
         "projectName": "OxygenEngine.Shaders",
-        "projectPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj",
+        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\obj\\",
+        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj": {
+    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
         "projectName": "OxygenEngine.Core",
-        "projectPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
+        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\obj\\",
+        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj": {
-                "projectPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj"
+              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj": {
+                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj"
               }
             }
           }

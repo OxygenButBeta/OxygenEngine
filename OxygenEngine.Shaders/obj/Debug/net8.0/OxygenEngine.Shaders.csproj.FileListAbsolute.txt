@@ -9,3 +9,15 @@ C:\Users\suley\source\repos\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\O
 C:\Users\suley\source\repos\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\refint\OxygenEngine.Shaders.dll
 C:\Users\suley\source\repos\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.pdb
 C:\Users\suley\source\repos\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\ref\OxygenEngine.Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\bin\Debug\net8.0\OxygenEngine.Shaders.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\bin\Debug\net8.0\OxygenEngine.Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\bin\Debug\net8.0\OxygenEngine.Shaders.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\refint\OxygenEngine.Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\OxygenEngine.Shaders.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Shaders\obj\Debug\net8.0\ref\OxygenEngine.Shaders.dll
