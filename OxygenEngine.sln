@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Database", "Ox
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Common", "OxygenEngine.Common\OxygenEngine.Common.csproj", "{F305C4E8-554A-4C3A-A028-C0790BE390C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Runtime", "OxygenEngine.Runtime\OxygenEngine.Runtime.csproj", "{67E9C521-8107-4C17-99D0-A57E029B62A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

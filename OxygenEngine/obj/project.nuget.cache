@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vpF2vKtd3RY=",
+  "dgSpecHash": "70Hpfsmsj/M=",
   "success": true,
   "projectFilePath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\suley\\.nuget\\packages\\imgui.net\\1.91.0.1\\imgui.net.1.91.0.1.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\opentk\\4.8.2\\opentk.4.8.2.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\opentk.audio.openal\\4.8.2\\opentk.audio.openal.4.8.2.nupkg.sha512",
@@ -21,6 +22,8 @@
     "C:\\Users\\suley\\.nuget\\packages\\stirlinglabs.assimp.native.osx\\5.2.5.4\\stirlinglabs.assimp.native.osx.5.2.5.4.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\stirlinglabs.assimp.native.win-x64\\5.2.5.4\\stirlinglabs.assimp.native.win-x64.5.2.5.4.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\stirlinglabs.assimp.net\\23.4.1\\stirlinglabs.assimp.net.23.4.1.nupkg.sha512",
+    "C:\\Users\\suley\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\suley\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\suley\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

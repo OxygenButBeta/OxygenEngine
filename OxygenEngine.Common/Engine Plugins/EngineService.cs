@@ -1,7 +1,7 @@
-﻿namespace OxygenEngine.Common.Engine_Plugins;
+﻿namespace OxygenEngine.Common.EnginePlugins;
 
 public static class EngineService {
-    public static T RaiseService<T>(CancellationToken token) where T : AsyncEngineService<T> {
+    public static T RaiseService<T>(CancellationToken token) where T : IAsyncEngineService<T> {
         return Activator.CreateInstance<T>().RaiseService(token);
     }
 }

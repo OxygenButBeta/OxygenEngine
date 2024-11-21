@@ -1,10 +1,10 @@
-﻿using OxygenEngine.Common.Engine_Plugins;
+﻿using OxygenEngine.Common.EnginePlugins;
 using OxygenEngine.AssetDatabase;
 using OxygenEngine.Database.Meta;
 
 namespace OxygenEngine.AssetDatabase;
 
-public partial class DataIndexer : AsyncEngineService<DataIndexer> {
+public partial class DataIndexer : IAsyncEngineService<DataIndexer> {
     readonly CancellationToken token;
     const int IndexInterval = 1000;
 

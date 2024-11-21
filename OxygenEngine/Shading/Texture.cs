@@ -23,7 +23,7 @@ public sealed class Texture {
 
         StbImage.stbi_set_flip_vertically_on_load(1);
         var texture = ImageResult.FromStream(
-            File.OpenRead((AssetDatabase.GuidToMetaData(textureGuid).GetExactPathFromMeta())),
+            File.OpenRead((GuidToMetaData(textureGuid).GetExactPathFromMeta())),
             ColorComponents.RedGreenBlueAlpha);
 
         GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, texture.Width, texture.Height,
