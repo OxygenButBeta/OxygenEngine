@@ -1,0 +1,16 @@
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\bin\Debug\net8.0\OxygenEngine.Database.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\bin\Debug\net8.0\OxygenEngine.Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\bin\Debug\net8.0\OxygenEngine.Database.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\bin\Debug\net8.0\OxygenEngine.Common.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\bin\Debug\net8.0\OxygenEngine.Common.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.csproj.AssemblyReference.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEn.C6346F35.Up2Date
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\refint\OxygenEngine.Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\OxygenEngine.Database.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Database\obj\Debug\net8.0\ref\OxygenEngine.Database.dll

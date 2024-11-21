@@ -2,12 +2,13 @@
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 using OxygenEngine.Shaders;
+using OxygenEngineCore.Primitive.Lib;
 using OxygenEngineCore.Rendering;
 using OxygenEngineCore.Rendering.Shading;
 
 namespace OxygenEngineCore.Primitive;
 
-public class Mesh {
+public class Mesh : IAssetImporter<Mesh> {
     public Matrix4 ScaleMatrix = Matrix4.Identity;
     public Matrix4 TransformMatrix;
     public Vector3[] Vertices { get; private set; }
@@ -36,7 +37,6 @@ public class Mesh {
         UVs = mesh.TextureCoordinateChannels[0].Select(t => new Vector2(t.X, t.Y)).ToArray();
         Indices = mesh.GetUnsignedIndices();
 
-        TransformMatrix = Matrix4.Identity;
 
         Vao = new VertexArrayObject();
         Vao.Bind();
@@ -76,5 +76,9 @@ public class Mesh {
         Index_IBO.Dispose();
         UV_VBO.Dispose();
         texture.Dispose();
+    }
+
+    public Mesh ImportAsset(string guid) {
+        return null;
     }
 }

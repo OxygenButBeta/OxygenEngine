@@ -75,3 +75,8 @@ C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\obj\De
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\obj\Debug\net8.0\OxygenEngine.Core.pdb
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\obj\Debug\net8.0\OxygenEngine.Core.genruntimeconfig.cache
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\obj\Debug\net8.0\ref\OxygenEngine.Core.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Common.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Database.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Common.pdb

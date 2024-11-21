@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Core", "Oxygen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Shaders", "OxygenEngine.Shaders\OxygenEngine.Shaders.csproj", "{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Database", "OxygenEngine.Database\OxygenEngine.Database.csproj", "{6361366D-9BF2-45C2-AA6A-A115BE410CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Common", "OxygenEngine.Common\OxygenEngine.Common.csproj", "{F305C4E8-554A-4C3A-A028-C0790BE390C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6361366D-9BF2-45C2-AA6A-A115BE410CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6361366D-9BF2-45C2-AA6A-A115BE410CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6361366D-9BF2-45C2-AA6A-A115BE410CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6361366D-9BF2-45C2-AA6A-A115BE410CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F305C4E8-554A-4C3A-A028-C0790BE390C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
