@@ -1,6 +1,6 @@
 ﻿using OxygenEngine.Database.Meta;
 
-namespace OxygenEngine.Database.Asset_Database;
+namespace OxygenEngine.AssetDatabase;
 
 public static class AssetDatabase {
     public static IEnumerable<MetaData> IndexedAssets => _assets;
@@ -15,5 +15,9 @@ public static class AssetDatabase {
 
     public static void UpdateMetaDataLibrary(List<MetaData> assets) {
         _assets = assets;
+    }
+
+    public static MetaData GuidToMetaData(string guid) {
+        return _assets.Find(a => a.FileGuid == guid);
     }
 }

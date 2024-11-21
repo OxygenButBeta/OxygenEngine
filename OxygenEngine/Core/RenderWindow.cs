@@ -4,6 +4,8 @@ using OpenTK.Windowing.Common;
 using OpenTK.Graphics.OpenGL4;
 using OpenTK.Windowing.GraphicsLibraryFramework;
 using OxygenEngine.Shaders;
+using OxygenEngineCore.Primitive;
+using OxygenEngineCore.Primitive.Lib;
 using OxygenEngineCore.Rendering;
 using Mesh = OxygenEngineCore.Primitive.Mesh;
 
@@ -12,7 +14,7 @@ namespace OxygenEngineCore {
     internal class RenderWindow : GameWindow {
         public event Action<RenderWindow> OnUpdate;
         public event Action<RenderWindow> OnAwake;
-        public List<Mesh> Meshes;
+        public List<IDrawCallElement> DrawCallElements;
         Shader generalShader;
         Camera camera;
         int width, height;
@@ -20,8 +22,7 @@ namespace OxygenEngineCore {
         public RenderWindow(int width, int height) : base(GameWindowSettings.Default, NativeWindowSettings.Default) {
             this.width = width;
             this.height = height;
-
-            Meshes = new List<Mesh>();
+            DrawCallElements = new();
             CenterWindow(new Vector2i(width, height));
         }
 
@@ -45,12 +46,13 @@ namespace OxygenEngineCore {
 
             camera = new Camera(width, height, Vector3.Zero);
             CursorState = CursorState.Grabbed;
+            Console.WriteLine("OnLoad");
             OnAwake?.Invoke(this);
         }
 
         protected override void OnUnload() {
             base.OnUnload();
-            Meshes.ForEach(x => x.Dispose());
+            DrawCallElements.ForEach(x => x.Dispose());
         }
 
         protected override void OnRenderFrame(FrameEventArgs args) {
@@ -68,12 +70,11 @@ namespace OxygenEngineCore {
             GL.UniformMatrix4(viewLocation, true, ref view);
             GL.UniformMatrix4(projectionLocation, true, ref projection);
 
-            foreach (var mesh in Meshes)
-                mesh.Render(generalShader);
+            foreach (var drawCallElement in DrawCallElements)
+                drawCallElement.DrawCall(generalShader);
 
 
             Context.SwapBuffers();
-
             base.OnRenderFrame(args);
         }
 
@@ -83,11 +84,11 @@ namespace OxygenEngineCore {
 
             if (KeyboardState.IsKeyPressed(Keys.C))
             {
-                var mesh = Meshes[0];
-                Meshes.RemoveAt(0);
+                var mesh = DrawCallElements[0];
+                DrawCallElements.RemoveAt(0);
                 mesh.Dispose();
             }
-  
+
             OnUpdate?.Invoke(this);
         }
     }

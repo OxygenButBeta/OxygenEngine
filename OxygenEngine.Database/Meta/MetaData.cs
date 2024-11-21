@@ -18,6 +18,8 @@ public readonly record struct MetaData : IEqualityComparer<MetaData> {
         FileName = fileName;
     }
 
+
+
     public static readonly MetaData Empty = new MetaData(DateTime.MinValue, string.Empty, string.Empty, string.Empty,
         string.Empty);
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OxygenEngine.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f918a3089b5424c1c816cb5607851f52dfd2e9c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a49eebf82bd28c486219bbafdf080fbe347bd82f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OxygenEngine.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OxygenEngine.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

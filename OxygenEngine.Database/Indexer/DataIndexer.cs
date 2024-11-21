@@ -1,8 +1,8 @@
 ﻿using OxygenEngine.Common.Engine_Plugins;
-using OxygenEngine.Database.Asset_Database;
+using OxygenEngine.AssetDatabase;
 using OxygenEngine.Database.Meta;
 
-namespace OxygenEngine.Database.Indexer;
+namespace OxygenEngine.AssetDatabase;
 
 public partial class DataIndexer : AsyncEngineService<DataIndexer> {
     readonly CancellationToken token;
@@ -16,7 +16,7 @@ public partial class DataIndexer : AsyncEngineService<DataIndexer> {
 
     public DataIndexer() {
         List<MetaData> assets = new(100);
-        assets.AddRange(from file in Directory.GetFiles(@"Assets")
+        assets.AddRange(from file in Directory.GetFiles(@"Assets","*.*",SearchOption.AllDirectories)
             where TargetTypes.Contains(Path.GetExtension(file))
             select MetaCreator.GetMetaData(file, true));
         
@@ -25,14 +25,14 @@ public partial class DataIndexer : AsyncEngineService<DataIndexer> {
 
     DataIndexer(CancellationToken token) {
         this.token = token;
-        Task.Run(IndexData, token);
+        Task.Run(IndexDataAsync, token);
     }
 
-    async Task IndexData() {
+    async Task IndexDataAsync() {
         while (!token.IsCancellationRequested)
         {
             List<MetaData> assets = new(100);
-            foreach (var file in Directory.GetFiles(@"Assets"))
+            foreach (var file in Directory.GetFiles(@"Assets","*.*",SearchOption.AllDirectories))
             {
                 if (!TargetTypes.Contains(Path.GetExtension(file)))
                     continue;
@@ -46,4 +46,5 @@ public partial class DataIndexer : AsyncEngineService<DataIndexer> {
             await Task.Delay(IndexInterval, token);
         }
     }
+
 }

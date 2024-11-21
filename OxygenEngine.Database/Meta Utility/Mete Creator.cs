@@ -35,4 +35,5 @@ public static class MetaCreator {
     internal static bool IsMetaExist(string path) {
         return File.Exists(GetMetaPathFromFilePath(path));
     }
+    
 }

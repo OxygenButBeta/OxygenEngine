@@ -5,12 +5,33 @@ using OpenTK.Graphics.OpenGL;
 
 namespace OxygenEngineCore.Primitive;
 
-public class MeshRenderer : Renderer , IDisposable {
+public class MeshRenderer : Renderer, IDisposable {
     internal Mesh mesh;
+    public bool IsStatic { get; set; } = false;
 
+    public MeshRenderer(Mesh mesh, Texture texture) {
+        this.mesh = mesh;
+        this.texture = texture;
+    }
 
     public override void Render(Shader shader) {
-        
+    }
+
+    public override void Dispose() {
+        Vao.Dispose();
+        Vertex_VBO.Dispose();
+        Index_IBO.Dispose();
+        UV_VBO.Dispose();
+        texture.Dispose();
+    }
+
+    bool m_dataCopiedToGPU = false;
+    bool m_dataCopyPending = false;
+
+    public override void PrepareToRender() {
+        Console.WriteLine("Preparing to render");
+        mesh = mesh.ImportAsset();
+
         Vao = new VertexArrayObject();
         Vao.Bind();
 
@@ -24,27 +45,25 @@ public class MeshRenderer : Renderer , IDisposable {
 
         Index_IBO = new IndexBufferObject(mesh.Indices);
 
-
-        texture = new Texture("texturePath");
-        
-        
-        shader.Bind();
-        var ScaledTransform = TransformMatrix * ScaleMatrix;
-        var offset = GL.GetUniformLocation(shader.ID, "transform");
-        GL.UniformMatrix4(offset, true, ref ScaledTransform);
-
         Vao.Bind();
         Index_IBO.BindBuffer();
         texture.Bind();
-
-        GL.DrawElements(BeginMode.Triangles, mesh.Indices.Length, DrawElementsType.UnsignedInt, 0);
+        m_dataCopiedToGPU = true;
+        m_dataCopyPending = false;
     }
 
-    public void Dispose() {
-        Vao.Dispose();
-        Vertex_VBO.Dispose();
-        Index_IBO.Dispose();
-        UV_VBO.Dispose();
-        texture.Dispose();
+    public override void DrawCall(Shader shader) {
+        if (!m_dataCopiedToGPU && !m_dataCopyPending)
+        {
+            Console.WriteLine("Pending data to copy..");
+            PrepareToRender();
+            shader.Bind();
+            return;
+        }
+
+        var ScaledTransform = TransformMatrix * ScaleMatrix;
+        var offset = GL.GetUniformLocation(shader.ID, "transform");
+        GL.UniformMatrix4(offset, true, ref ScaledTransform);
+        GL.DrawElements(BeginMode.Triangles, mesh.Indices.Length, DrawElementsType.UnsignedInt, 0);
     }
 }
