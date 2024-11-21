@@ -22,6 +22,7 @@ namespace OxygenEngineCore {
         public RenderWindow(int width, int height) : base(GameWindowSettings.Default, NativeWindowSettings.Default) {
             this.width = width;
             this.height = height;
+            Title = "Oxygen Engine | Graphic API: OpenGL " + APIVersion; ;
             DrawCallElements = new();
             CenterWindow(new Vector2i(width, height));
         }

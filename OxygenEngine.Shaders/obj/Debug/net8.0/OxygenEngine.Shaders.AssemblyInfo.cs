@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OxygenEngine.Shaders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f918a3089b5424c1c816cb5607851f52dfd2e9c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b2419d2d2339d585dd80371a9a14db59b6ca7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OxygenEngine.Shaders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OxygenEngine.Shaders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
