@@ -15,11 +15,11 @@ public class OxygenEngine(int width = 1280, int height = 720) {
     readonly CancellationTokenSource _asyncEngineServiceToken = new();
 
     public void AttachToRenderQueue(IDrawCallElement drawCallElement) {
-        OpenGlRenderEngine.DrawCallElements.Add(drawCallElement);
+        OpenGlRenderEngine.AttachToDrawQueue(drawCallElement);
     }
 
     public void DetachFromRenderQueue(IDrawCallElement drawCallElement) {
-        OpenGlRenderEngine.DrawCallElements.Remove(drawCallElement);
+        OpenGlRenderEngine.DetachFromDrawQueue(drawCallElement);
     }
 
 

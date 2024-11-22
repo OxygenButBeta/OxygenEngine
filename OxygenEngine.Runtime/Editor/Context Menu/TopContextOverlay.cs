@@ -18,11 +18,15 @@ public class TopContextOverlay {
             {
                 foreach (var asset in AssetDatabase.AssetDatabase.IndexedAssets)
                 {
+                    if (asset.FileExtension != ".obj")
+                    {
+                        continue;
+                    }
+
                     if (ImGui.MenuItem(asset.FileName))
                     {
-                        var mesh = new Mesh(@"b46e55cd-bd7c-46d8-b494-564358dd85f4");
+                        var mesh = new Mesh(asset.FileGuid);
                         MeshRenderer meshRenderer = new(mesh, new(@"261fb487-1c2b-47ab-8b5b-f86d3710a7c2"));
-                        Console.WriteLine("Imported: " + asset.FileName);
                         EngineStarter.engine.AttachToRenderQueue(meshRenderer);
                     }
                 }

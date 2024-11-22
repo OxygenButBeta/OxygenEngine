@@ -8,13 +8,13 @@ namespace OxygenEngineCore.Primitive;
 public class MeshRenderer : Renderer, IDisposable {
     internal Mesh mesh;
     public bool IsStatic { get; set; } = false;
+    bool m_dataCopiedToGPU;
+    bool m_dataCopyPending;
+    bool m_meshImported;
 
     public MeshRenderer(Mesh mesh, Texture texture) {
         this.mesh = mesh;
         this.texture = texture;
-    }
-
-    public override void Render(Shader shader) {
     }
 
     public override void Dispose() {
@@ -25,12 +25,12 @@ public class MeshRenderer : Renderer, IDisposable {
         texture.Dispose();
     }
 
-    bool m_dataCopiedToGPU = false;
-    bool m_dataCopyPending = false;
-
     public override void PrepareToRender() {
-        Console.WriteLine("Preparing to render");
-        mesh = mesh.ImportAsset();
+        if (!m_meshImported)
+        {
+            mesh = mesh.ImportAsset();
+            m_meshImported = true;
+        }
 
         Vao = new VertexArrayObject();
         Vao.Bind();
@@ -57,9 +57,9 @@ public class MeshRenderer : Renderer, IDisposable {
         {
             Console.WriteLine("Pending data to copy..");
             PrepareToRender();
-            shader.Bind();
             return;
         }
+        shader.Bind();
 
         var ScaledTransform = TransformMatrix * ScaleMatrix;
         var offset = GL.GetUniformLocation(shader.ID, "transform");

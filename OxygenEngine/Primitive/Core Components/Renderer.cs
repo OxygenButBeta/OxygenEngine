@@ -13,7 +13,6 @@ public abstract class Renderer : IDisposable, IDrawCallElement {
 
     public Matrix4 ScaleMatrix = Matrix4.Identity;
     public Matrix4 TransformMatrix = Matrix4.Identity;
-    public abstract void Render(Shader shader);
 
     public abstract void Dispose();
     public abstract void PrepareToRender();

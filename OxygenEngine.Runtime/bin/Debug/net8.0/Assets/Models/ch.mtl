@@ -1,0 +1,13 @@
+# Blender 4.0.0 MTL File: 'gallinera_table_1k.blend'
+# www.blender.org
+
+newmtl gallinera_table
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/suley/OneDrive/Desktop/gallinera_table_1k.blend/textures/gallinera_table_diff_1k.jpg
+map_Ns C:/Users/suley/OneDrive/Desktop/gallinera_table_1k.blend/textures/gallinera_table_rough_1k.exr
+map_Bump -bm 1.000000 C:/Users/suley/OneDrive/Desktop/gallinera_table_1k.blend/textures/gallinera_table_nor_gl_1k.exr

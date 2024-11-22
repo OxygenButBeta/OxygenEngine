@@ -18,16 +18,6 @@ public class Mesh : IAssetImporter<Mesh> {
     }
 
     public Mesh ImportAsset() {
-        foreach (var importedMesh in ImportedMeshes)
-        {
-            if (importedMesh.key == KeyGuid)
-            {
-                Console.WriteLine("Mesh already in memory");
-                return ImportedMeshes.Find(m => m.Item2 == KeyGuid).mesh;
-            }
- 
-        }
-
 
         var mesh = new AssimpContext().ImportFile((AssetDatabase.GuidToMetaData(KeyGuid).GetExactPathFromMeta()))
             .Meshes[0];
@@ -36,9 +26,6 @@ public class Mesh : IAssetImporter<Mesh> {
         Normals = mesh.Normals.Select(n => new Vector3(n.X, n.Y, n.Z)).ToArray();
         UVs = mesh.TextureCoordinateChannels[0].Select(t => new Vector2(t.X, t.Y)).ToArray();
         Indices = mesh.GetUnsignedIndices();
-        ImportedMeshes.Add((this,KeyGuid));
         return this;
     }
-
-    static readonly List<(Mesh mesh,string key)> ImportedMeshes = new();
 }

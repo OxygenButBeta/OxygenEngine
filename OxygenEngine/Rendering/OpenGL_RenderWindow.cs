@@ -16,12 +16,28 @@ namespace OxygenEngineCore {
         public event Action<FrameEventArgs, OpenGL_RenderWindow> LateUpdate;
         public event Action OPENGL_OverlayUpdate;
         public event Action<OpenGL_RenderWindow> OnAwake;
-        public List<IDrawCallElement> DrawCallElements;
+        public  List<IDrawCallElement> DrawCallElements;
         Shader generalShader;
         Camera m_RenderCamera;
         int width, height;
         readonly ImGuiController imGuiController;
 
+        public void AttachToDrawQueue(IDrawCallElement drawCallElement) {
+            DrawCallElements.Add(drawCallElement);
+            foreach (var element in DrawCallElements)
+            {  
+                element.PrepareToRender();
+            }
+        }
+
+        public void DetachFromDrawQueue(IDrawCallElement drawCallElement) {
+            DrawCallElements.Remove(drawCallElement);
+            foreach (var element in DrawCallElements)
+            {
+                element.Dispose();
+                element.PrepareToRender();
+            }
+        }
 
         public OpenGL_RenderWindow(int width, int height) : base(GameWindowSettings.Default,
             NativeWindowSettings.Default) {
@@ -65,7 +81,7 @@ namespace OxygenEngineCore {
         protected override void OnRenderFrame(FrameEventArgs args) {
             base.OnRenderFrame(args);
 
-            GL.ClearColor(0.3f, 0.3f, 1f, 1f);
+            GL.ClearColor(0.0f, 0.4f, 0.7f, 1f);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit |
                      ClearBufferMask.StencilBufferBit);
 
@@ -82,6 +98,7 @@ namespace OxygenEngineCore {
 
             foreach (var drawCallElement in DrawCallElements)
                 drawCallElement.DrawCall(generalShader);
+
             imGuiController.Update(this, (float)args.Time);
 
             OPENGL_OverlayUpdate?.Invoke();

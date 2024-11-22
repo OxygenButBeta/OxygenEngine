@@ -9,7 +9,7 @@ public class EngineStarter {
     public void StartEngine() {
     
         engine.OnEngineUpdate += (deltaTime) => {
-            if (Input.IsKeyDown(Key.Space))
+            if (Input.IsKeyPressed(Key.Space))
             {
                 Console.WriteLine("Space key is pressed");
             }
@@ -17,6 +17,7 @@ public class EngineStarter {
         engine.UI_OverlayUpdate += () => {
             TopContextOverlay.DrawTopContextMenu();
             ObjectTransformMenu.DrawLeftMenu();
+            ObjectTransformMenu.DrawUIClr();
         };
         engine.StartEngine();
     }
