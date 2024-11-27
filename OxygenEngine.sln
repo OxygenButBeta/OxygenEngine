@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Common", "Oxyg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Runtime", "OxygenEngine.Runtime\OxygenEngine.Runtime.csproj", "{67E9C521-8107-4C17-99D0-A57E029B62A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Serialization", "OxygenEngine.Serialization\OxygenEngine.Serialization.csproj", "{1E9D7F87-46AA-4D70-BC50-E3AE2952B540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OxygenEngine.Assembly", "OxygenEngine.Assembly\OxygenEngine.Assembly.csproj", "{302D6C96-7275-48C3-A9CD-9A825E3C6D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67E9C521-8107-4C17-99D0-A57E029B62A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E9D7F87-46AA-4D70-BC50-E3AE2952B540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9D7F87-46AA-4D70-BC50-E3AE2952B540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9D7F87-46AA-4D70-BC50-E3AE2952B540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9D7F87-46AA-4D70-BC50-E3AE2952B540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{302D6C96-7275-48C3-A9CD-9A825E3C6D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302D6C96-7275-48C3-A9CD-9A825E3C6D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302D6C96-7275-48C3-A9CD-9A825E3C6D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302D6C96-7275-48C3-A9CD-9A825E3C6D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

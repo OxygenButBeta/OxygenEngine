@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OxygenEngine.Assembly/1.0.0": {
+        "runtime": {
+          "OxygenEngine.Assembly.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OxygenEngine.Assembly/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

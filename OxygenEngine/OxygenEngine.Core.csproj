@@ -17,7 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OxygenEngine.Assembly\OxygenEngine.Assembly.csproj" />
     <ProjectReference Include="..\OxygenEngine.Database\OxygenEngine.Database.csproj" />
+    <ProjectReference Include="..\OxygenEngine.Serialization\OxygenEngine.Serialization.csproj" />
     <ProjectReference Include="..\OxygenEngine.Shaders\OxygenEngine.Shaders.csproj" />
   </ItemGroup>
 

@@ -19,6 +19,7 @@ namespace OxygenEngineCore {
 
         bool firstMove = true;
         Vector2 lastPos;
+        MouseState mouse;
 
         public Matrix4 GetViewMatrix() {
             return Matrix4.LookAt(position, position + front, up);
@@ -50,7 +51,7 @@ namespace OxygenEngineCore {
             up = Vector3.Normalize(Vector3.Cross(right, front));
         }
 
-        void InputController(KeyboardState input, MouseState mouse, FrameEventArgs e, OpenGL_RenderWindow gl) {
+        void InputController(KeyboardState input, MouseState mouse, FrameEventArgs e, GLRenderWindow gl) {
             if (mouse.ScrollDelta.Y != 0)
             {
                 this.movingSpeed += mouse.ScrollDelta.Y;
@@ -88,7 +89,6 @@ namespace OxygenEngineCore {
             }
             else
             {
-                looking = mouse.IsButtonDown(MouseButton.Button2);
                 if (!mouse.IsButtonDown(MouseButton.Button2))
                 {
                     gl.CursorState = CursorState.Normal;
@@ -108,28 +108,23 @@ namespace OxygenEngineCore {
             UpdateVectors();
         }
 
-        public void Update(FrameEventArgs e, OpenGL_RenderWindow gl) {
+        public void Update(FrameEventArgs e, GLRenderWindow gl) {
             InputController(gl.KeyboardState, gl.MouseState, e, gl);
+            mouse = gl.MouseState;
         }
 
-        bool looking = false;
 
-        public void DrawBottomRightInfo() {
-            var displaySize = ImGui.GetIO().DisplaySize;
-            var windowSize = new System.Numerics.Vector2(200, 50);
-            var position =
-                new System.Numerics.Vector2(displaySize.X - windowSize.X - 10,
-                    displaySize.Y - windowSize.Y - 10); // Sağ alt köşe pozisyonu
-            ImGui.SetNextWindowPos(position);
+        public void FrameUpdate() {
+            if (!mouse.IsButtonDown(MouseButton.Button2))
+                return;
+            var windowSize = new System.Numerics.Vector2(130, 8);
+            ImGui.SetNextWindowPos(new System.Numerics.Vector2(mouse.X + 10, mouse.Y + 20));
             ImGui.SetNextWindowSize(windowSize);
 
-            if (ImGui.Begin("Camera Info",
-                    ImGuiWindowFlags.NoDecoration | ImGuiWindowFlags.NoMove | ImGuiWindowFlags.NoResize))
-            {
-                ImGui.Text($"Camera Speed: {movingSpeed}x");
-                ImGui.Text($"Looking : {(looking ? "Yes" : "No")}");
-                ImGui.End();
-            }
+            if (!ImGui.Begin("Camera Info",
+                    ImGuiWindowFlags.NoDecoration | ImGuiWindowFlags.NoMove | ImGuiWindowFlags.NoResize)) return;
+            ImGui.Text($"Camera Speed: {movingSpeed}x");
+            ImGui.End();
         }
     }
 }

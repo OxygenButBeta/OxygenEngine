@@ -11,7 +11,9 @@
           "ImGui.NET": "1.91.0.1",
           "Newtonsoft.Json": "13.0.3",
           "OpenTK": "4.8.2",
+          "OxygenEngine.Assembly": "1.0.0",
           "OxygenEngine.Database": "1.0.0",
+          "OxygenEngine.Serialization": "1.0.0",
           "OxygenEngine.Shaders": "1.0.0",
           "StbImageSharp": "2.30.15",
           "StirlingLabs.Assimp.Net": "23.4.1",
@@ -265,6 +267,11 @@
       "System.Buffers/4.5.1": {},
       "System.Numerics.Vectors/4.5.0": {},
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "OxygenEngine.Assembly/1.0.0": {
+        "runtime": {
+          "OxygenEngine.Assembly.dll": {}
+        }
+      },
       "OxygenEngine.Common/1.0.0": {
         "runtime": {
           "OxygenEngine.Common.dll": {}
@@ -277,6 +284,11 @@
         },
         "runtime": {
           "OxygenEngine.Database.dll": {}
+        }
+      },
+      "OxygenEngine.Serialization/1.0.0": {
+        "runtime": {
+          "OxygenEngine.Serialization.dll": {}
         }
       },
       "OxygenEngine.Shaders/1.0.0": {
@@ -439,12 +451,22 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
+    "OxygenEngine.Assembly/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "OxygenEngine.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "OxygenEngine.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OxygenEngine.Serialization/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

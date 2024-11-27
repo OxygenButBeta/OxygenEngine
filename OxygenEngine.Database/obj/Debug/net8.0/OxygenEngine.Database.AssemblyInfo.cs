@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OxygenEngine.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b31a9dd62d84b08f72350700f257f761caee60c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99c3d1ef4d29e55c0d2be08073fc794da2b091ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("OxygenEngine.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OxygenEngine.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

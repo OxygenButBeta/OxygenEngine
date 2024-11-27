@@ -15,17 +15,18 @@ public class VertexBufferObject {
 
     public VertexBufferObject(Vector2[]?  Data) {
         ID = GL.GenBuffer();
-        GL.BindBuffer(BufferTarget.ArrayBuffer, ID);
+        BindBuffer();
+        
+        //Copy data to GPU
         GL.BufferData(BufferTarget.ArrayBuffer, Data.Length * Vector2.SizeInBytes, Data, UsageHint);
     }
 
     public void BindBuffer() {
         GL.BindBuffer(BufferTarget.ArrayBuffer, ID);
     }
-    public void UnbindBuffer() {
-        GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
-    }
+
     public void Dispose() {
+        GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
         GL.DeleteBuffer(ID);
     }
 }

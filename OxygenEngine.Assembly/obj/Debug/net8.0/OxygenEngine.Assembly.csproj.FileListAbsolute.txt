@@ -1,0 +1,12 @@
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\bin\Debug\net8.0\OxygenEngine.Assembly.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\bin\Debug\net8.0\OxygenEngine.Assembly.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\bin\Debug\net8.0\OxygenEngine.Assembly.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\refint\OxygenEngine.Assembly.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\OxygenEngine.Assembly.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine.Assembly\obj\Debug\net8.0\ref\OxygenEngine.Assembly.dll

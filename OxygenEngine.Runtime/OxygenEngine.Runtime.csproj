@@ -8,7 +8,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\OxygenEngine.Assembly\OxygenEngine.Assembly.csproj" />
       <ProjectReference Include="..\OxygenEngine\OxygenEngine.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Scripting\" />
     </ItemGroup>
 
 </Project>

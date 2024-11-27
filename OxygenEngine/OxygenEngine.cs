@@ -6,30 +6,36 @@ using OxygenEngineCore.Primitive.Lib;
 
 namespace OxygenEngineCore;
 
-public class OxygenEngine(int width = 1280, int height = 720) {
+public class OxygenEngine {
     public event Action<OxygenEngine> OnEngineStart;
     public event Action<IEngineService> OnEngineServiceStart;
     public event Action<float> OnEngineUpdate;
-    public event Action UI_OverlayUpdate;
-    public OpenGL_RenderWindow OpenGlRenderEngine = new(width, height);
+    public event Action OnUiOverlayUpdate;
+    public static GLRenderWindow GlRenderEngine { get; private set; }
     readonly CancellationTokenSource _asyncEngineServiceToken = new();
+    public static OxygenEngine Instance { get; private set; }
+    public Scene.Scene CurrentScene { get; set; } = new("Default Scene");
 
-    public void AttachToRenderQueue(IDrawCallElement drawCallElement) {
-        OpenGlRenderEngine.AttachToDrawQueue(drawCallElement);
-    }
+    int width, height;
 
-    public void DetachFromRenderQueue(IDrawCallElement drawCallElement) {
-        OpenGlRenderEngine.DetachFromDrawQueue(drawCallElement);
+    public OxygenEngine(int width = 1280, int height = 720) {
+        Instance = this;
+        this.width = width;
+        this.height = height;
     }
 
 
     public void StartEngine() {
         AssetDatabase.Init();
         EngineService.RaiseService<DataIndexer>(_asyncEngineServiceToken.Token);
-        OpenGlRenderEngine.OnUpdate += (arg, gl) => { OnEngineUpdate?.Invoke((float)arg.Time); };
-        OpenGlRenderEngine.EarlyUpdate += (fa, gl) => Input.Update(gl);
-        OpenGlRenderEngine.OnAwake += (window) => { OnEngineStart?.Invoke(this); };
-        OpenGlRenderEngine.OPENGL_OverlayUpdate += UI_OverlayUpdate;
-        OpenGlRenderEngine.Run();
+        GlRenderEngine = new(width, height);
+        GlRenderEngine.OnUpdate += (arg, gl) => {
+            OnEngineUpdate?.Invoke((float)arg.Time);
+            CurrentScene.Update((float)arg.Time);
+        };
+        GlRenderEngine.EarlyUpdate += (fa, gl) => Input.Update(gl);
+        GlRenderEngine.OnAwake += (window) => { OnEngineStart.Invoke(this); };
+        GlRenderEngine.OPENGL_OverlayUpdate += ()=> OnUiOverlayUpdate.Invoke();
+        GlRenderEngine.Run();
     }
 }

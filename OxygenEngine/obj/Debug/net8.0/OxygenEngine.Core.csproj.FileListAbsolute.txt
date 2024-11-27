@@ -56,3 +56,7 @@ C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\De
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Database.dll
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Database.pdb
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Common.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Serialization.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Serialization.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Assembly.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\OxygenEngine\bin\Debug\net8.0\OxygenEngine.Assembly.pdb

@@ -21,7 +21,7 @@ public class Input : IEngineService {
         return keyboardState.IsKeyPressed((Keys)keyVal);
     }
 
-    public static void Update(OpenGL_RenderWindow gl) {
+    public static void Update(GLRenderWindow gl) {
         keyboardState = gl.KeyboardState;
     }
 }
