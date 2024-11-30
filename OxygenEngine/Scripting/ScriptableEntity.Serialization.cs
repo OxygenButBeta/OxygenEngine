@@ -16,7 +16,7 @@ public abstract partial class CoreBehaviour {
     }
 
     public override Dictionary<string, string> Serialize() {
-        var SerializedFields = SerializedVariableAttribute.GetAllSerializedVariables(this);
+        var SerializedFields = SerializedFieldAttribute.GetAllSerializedVariables(this);
         var result = new Dictionary<string, string>();
         foreach (var fieldInfo in SerializedFields)
         {
@@ -28,7 +28,7 @@ public abstract partial class CoreBehaviour {
     }
 
     public override void Deserialize(Dictionary<string, string> data) {
-        var SerializedFields = SerializedVariableAttribute.GetAllSerializedVariables(this);
+        var SerializedFields = SerializedFieldAttribute.GetAllSerializedVariables(this);
         (string name, string value) pair;
         foreach (var fieldInfo in SerializedFields)
         {

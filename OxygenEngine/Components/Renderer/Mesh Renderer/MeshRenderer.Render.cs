@@ -20,7 +20,7 @@ public partial class MeshRenderer {
         Console.WriteLine("Active State Changed" + active);
     }
 
-    void PrepareToRender() {
+    public void PrepareToRender() {
         if (!m_meshImported && mesh != null)
         {
             mesh = mesh.ImportAsset();

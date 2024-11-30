@@ -1,13 +1,14 @@
 ﻿using OxygenEngineCore.Primitive.Lib;
 using OxygenEngineCore.Rendering;
 using OpenTK.Graphics.OpenGL;
+using OpenTK.Mathematics;
+using OxygenEngine.Serialization;
 
 namespace OxygenEngineCore.Primitive;
 
 public partial class MeshRenderer : Renderer, IDisposable {
-    Mesh mesh;
+   [SerializedField] Mesh mesh;
     bool m_meshImported;
-
 
     public override void Dispose() {
         Vao.Dispose();

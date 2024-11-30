@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("OxygenEngine.Runtime")]
+[assembly: InternalsVisibleTo("O2.Editor")]
 
 namespace OxygenEngineCore;
 
@@ -14,11 +14,9 @@ public partial class WorldObject {
         }
     }
 
-    internal void AddComponent<T>() where T : Component, new() {
-        var component = new T
-        {
-            worldObject = this
-        };
+    internal void AddComponent<T>() where T : Component {
+        var component = Activator.CreateInstance<T>();
+        component.worldObject = this;
         Components.Add(typeof(T), component);
         component.OnComponentAdded();
     }
@@ -41,10 +39,13 @@ public partial class WorldObject {
     }
 
     internal Component GetComponent(Type type) {
+        if (!Components.ContainsKey(type))
+            return null;
         return Components[type];
     }
 
-    public WorldObject() {
+    public WorldObject(string name = "New World Object") {
         spatial = new Spatial(this);
+        Name = name;
     }
 }

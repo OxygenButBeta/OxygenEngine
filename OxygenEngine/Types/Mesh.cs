@@ -12,8 +12,8 @@ public class Mesh : IAssetImporter<Mesh>, ISerializableEntity {
     public Vector3[] Normals { get; private set; }
     public Vector2[] UVs { get; private set; }
     public uint[] Indices { get; private set; }
-    public string ModelMetaGuid;
-
+    [SerializedField] public string ModelMetaGuid;
+    public MeshRenderer renderer;
 
     public Mesh ImportAsset() {
         var mesh = new AssimpContext().ImportFile((AssetDatabase.GuidToMetaData(ModelMetaGuid).GetExactPathFromMeta()))

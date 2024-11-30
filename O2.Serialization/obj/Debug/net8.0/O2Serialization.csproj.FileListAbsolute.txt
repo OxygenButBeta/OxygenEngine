@@ -1,0 +1,12 @@
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\bin\Debug\net8.0\O2Serialization.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\bin\Debug\net8.0\O2Serialization.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\bin\Debug\net8.0\O2Serialization.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\refint\O2Serialization.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\O2Serialization.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Serialization\obj\Debug\net8.0\ref\O2Serialization.dll

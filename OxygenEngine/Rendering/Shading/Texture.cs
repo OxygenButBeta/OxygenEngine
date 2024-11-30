@@ -10,7 +10,7 @@ namespace OxygenEngineCore.Rendering;
 
 public sealed class Texture : ISerializableEntity, IAssetImporter<Texture> {
     public int ID { get; set; }
-    string textureMetaGuid = "46fec3cf-2021-42de-a8bb-34d0755c8653"; // Default texture
+    public   string textureMetaGuid = "46fec3cf-2021-42de-a8bb-34d0755c8653"; // Default texture
     ImageResult texture;
 
     void gpuTexture() {

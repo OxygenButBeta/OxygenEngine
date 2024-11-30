@@ -15,6 +15,7 @@ public abstract class Component : ISerializableEntity {
             OnActiveStateChange(value);
         }
     }
+    [SerializedField]
 
     internal bool m_active = true;
 

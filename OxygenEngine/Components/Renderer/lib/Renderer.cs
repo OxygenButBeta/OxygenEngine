@@ -1,11 +1,12 @@
 ﻿using OpenTK.Mathematics;
 using OxygenEngine.Scripting;
+using OxygenEngine.Serialization;
 using OxygenEngineCore.Rendering;
 
 namespace OxygenEngineCore.Primitive.Lib;
 
 public abstract class Renderer : CoreBehaviour, IDrawCallElement {
-    protected Texture? texture;
+    [SerializedField] public Texture? texture;
     public VertexArrayObject Vao { get; protected set; }
     protected VertexBufferObject Vertex_VBO;
     protected VertexBufferObject UV_VBO;

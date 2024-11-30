@@ -1,8 +1,7 @@
-﻿using OxygenEngine.AssetDatabase;
-using OxygenEngine.Common.EnginePlugins;
+﻿using O2Common.EnginePlugins;
+using OxygenEngine.AssetDatabase;
 using OxygenEngineCore.InputSystem;
-using OxygenEngineCore.Primitive;
-using OxygenEngineCore.Primitive.Lib;
+
 
 namespace OxygenEngineCore;
 
@@ -35,7 +34,7 @@ public class OxygenEngine {
         };
         GlRenderEngine.EarlyUpdate += (fa, gl) => Input.Update(gl);
         GlRenderEngine.OnAwake += (window) => { OnEngineStart.Invoke(this); };
-        GlRenderEngine.OPENGL_OverlayUpdate += ()=> OnUiOverlayUpdate.Invoke();
+        GlRenderEngine.OverlayUpdate += ()=> OnUiOverlayUpdate.Invoke();
         GlRenderEngine.Run();
     }
 }

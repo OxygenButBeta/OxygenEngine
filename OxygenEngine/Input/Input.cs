@@ -1,5 +1,5 @@
-﻿using OpenTK.Windowing.GraphicsLibraryFramework;
-using OxygenEngine.Common.EnginePlugins;
+﻿using O2Common.EnginePlugins;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace OxygenEngineCore.InputSystem;
 

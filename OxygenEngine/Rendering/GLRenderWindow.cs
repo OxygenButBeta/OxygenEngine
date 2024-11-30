@@ -3,7 +3,7 @@ using OpenTK.Windowing.Desktop;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Graphics.OpenGL4;
-using OxygenEngine.Shaders;
+using O2Shaders;
 using OxygenEngineCore.Primitive.Lib;
 using OxygenEngineCore.Rendering;
 
@@ -13,7 +13,7 @@ namespace OxygenEngineCore {
         public event Action<FrameEventArgs, GLRenderWindow> OnUpdate;
         public event Action<FrameEventArgs, GLRenderWindow> EarlyUpdate;
         public event Action<FrameEventArgs, GLRenderWindow> LateUpdate;
-        public event Action OPENGL_OverlayUpdate;
+        public event Action OverlayUpdate;
         public event Action<GLRenderWindow> OnAwake;
         public List<IDrawCallElement> DrawCallElements;
         Shader generalShader;
@@ -38,7 +38,12 @@ namespace OxygenEngineCore {
             DrawCallElements = [];
             CenterWindow(new Vector2i(width, height));
             imGuiController = new ImGuiController(width, height);
+            TextInput += bindInput;
             m_loaded = true;
+        }
+
+        void bindInput(TextInputEventArgs obj) {
+            imGuiController.PressChar(obj.AsString[0]);
         }
 
         protected override void OnResize(ResizeEventArgs e) {
@@ -100,13 +105,14 @@ namespace OxygenEngineCore {
                 drawCallElement.Vao.Bind();
                 drawCallElement.DrawCall(generalShader);
             }
-
+            
+            
             imGuiController.Update(this, (float)args.Time);
-
-
-            OPENGL_OverlayUpdate?.Invoke();
+            OverlayUpdate?.Invoke();
             m_RenderCamera.FrameUpdate();
             imGuiController.Render();
+            
+   
 
             ImGuiController.CheckGLError("End of frame");
             Context.SwapBuffers();

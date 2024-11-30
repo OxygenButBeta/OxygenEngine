@@ -11,7 +11,7 @@ public abstract partial class CoreBehaviour : Component {
         // Begin linking
     }
 
-    public void AddComponent<T>() where T : Component, new() {
+    public void AddComponent<T>() where T : Component {
         worldObject.AddComponent<T>();
     }
 
@@ -25,6 +25,9 @@ public abstract partial class CoreBehaviour : Component {
 
     public Component GetComponent(Type type) {
         return worldObject.GetComponent(type);
+    }
+    public T GetComponent<T>() where T : Component {
+        return(T) worldObject.GetComponent(typeof(T));
     }
 
     public WorldObject Instantiate() {

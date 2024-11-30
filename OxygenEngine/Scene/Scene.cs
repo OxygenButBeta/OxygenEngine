@@ -29,8 +29,7 @@ public class Scene : ISerializableEntity {
     }
 
     public Dictionary<string, string> Serialize() {
-        Dictionary<string, string> dict = new();
-        dict.Add("Name", Name);
+        Dictionary<string, string> dict = new() { { "Name", Name } };
         var worldObjectsDict = new Dictionary<string, string>();
         foreach (var worldObject in worldObjects)
         {

@@ -18,9 +18,6 @@ public partial class Spatial {
         set => HandleScale(value);
     }
 
-
-    public Spatial parent;
-    public Spatial[] children;
     internal Matrix4 TransformMatrix => Matrix4.CreateTranslation(m_position);
     internal Matrix4 ScaleMatrix => Matrix4.CreateScale(m_scale);
     internal Matrix4 RotationMatrix => Matrix4.CreateFromQuaternion(m_rotation);

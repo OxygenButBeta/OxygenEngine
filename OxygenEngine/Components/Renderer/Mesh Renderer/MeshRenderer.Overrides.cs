@@ -5,6 +5,7 @@ namespace OxygenEngineCore.Primitive;
 public partial class MeshRenderer {
     internal override void OnBegin() {
         mesh = new Mesh();
+        mesh.renderer = this;
         mesh.ModelMetaGuid = "b46e55cd-bd7c-46d8-b494-564358dd85f4";
         PrepareToRender();
         

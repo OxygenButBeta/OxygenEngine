@@ -1,0 +1,16 @@
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\bin\Debug\net8.0\O2Database.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\bin\Debug\net8.0\O2Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\bin\Debug\net8.0\O2Database.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\bin\Debug\net8.0\O2Common.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\bin\Debug\net8.0\O2Common.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.csproj.AssemblyReference.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.csproj.Up2Date
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\refint\O2Database.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\O2Database.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Database\obj\Debug\net8.0\ref\O2Database.dll

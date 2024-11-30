@@ -37,6 +37,10 @@ public partial class WorldObject : ISerializableEntity {
         foreach (var keyValuePair in componentDict)
         {
             var componentType = Type.GetType(keyValuePair.Key);
+            if (componentType is null)
+            {
+                continue;
+            }
             var instance = Activator.CreateInstance(componentType);
             if (instance is not Component component)
                 continue;

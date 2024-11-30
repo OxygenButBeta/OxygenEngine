@@ -1,0 +1,12 @@
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\bin\Debug\net8.0\O2Shaders.deps.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\bin\Debug\net8.0\O2Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\bin\Debug\net8.0\O2Shaders.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.sourcelink.json
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\refint\O2Shaders.dll
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\O2Shaders.pdb
+C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2Shaders\obj\Debug\net8.0\ref\O2Shaders.dll
