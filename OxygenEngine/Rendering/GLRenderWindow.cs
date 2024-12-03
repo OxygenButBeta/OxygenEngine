@@ -99,19 +99,26 @@ namespace OxygenEngineCore {
 
             GL.UniformMatrix4(viewLocation, true, ref view);
             GL.UniformMatrix4(projectionLocation, true, ref projection);
+            
 
             foreach (var drawCallElement in DrawCallElements)
             {
                 drawCallElement.Vao.Bind();
                 drawCallElement.DrawCall(generalShader);
             }
-            
+            Color4 coral = new Color4(1.0f, 0.5f, 0.31f, 1.0f);
+
+            Color4 result = new(0.33f, 0.21f, 0.06f, 1.0f);
             
             imGuiController.Update(this, (float)args.Time);
             OverlayUpdate?.Invoke();
             m_RenderCamera.FrameUpdate();
             imGuiController.Render();
-            
+
+            #region light
+
+
+            #endregion
    
 
             ImGuiController.CheckGLError("End of frame");
