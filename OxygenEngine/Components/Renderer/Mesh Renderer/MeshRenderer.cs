@@ -1,4 +1,5 @@
-﻿using OxygenEngineCore.Primitive.Lib;
+﻿using Newtonsoft.Json;
+using OxygenEngineCore.Primitive.Lib;
 using OxygenEngineCore.Rendering;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
@@ -6,8 +7,9 @@ using OxygenEngine.Serialization;
 
 namespace OxygenEngineCore.Primitive;
 
+
 public partial class MeshRenderer : Renderer, IDisposable {
-   [SerializedField] Mesh mesh;
+    [SerializedField] Mesh mesh;
     bool m_meshImported;
 
     public override void Dispose() {
@@ -22,7 +24,6 @@ public partial class MeshRenderer : Renderer, IDisposable {
     public override void DrawCall(Shader shader) {
         if (!Enabled && m_meshImported)
             return;
-
         shader.Bind();
         if (!worldObject.IsStatic)
         {

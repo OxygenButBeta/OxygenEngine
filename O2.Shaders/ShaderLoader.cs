@@ -1,6 +1,6 @@
 ﻿namespace O2Shaders {
-	//Just a text structure for the shaders
-	// TODO: Implement a shader loader
+    //Just a text structure for the shaders
+    // TODO: Implement a shader loader
     public struct ShaderLoader {
         public static string VertexShader = @"#version 330 core
                 layout (location = 0) in vec3 aPosition; // vertex coordinates
@@ -21,8 +21,7 @@
 
         public static string FragmentShader = @"
 				#version 330 core
-
-                in vec2 texCoord;
+				  in vec2 texCoord;
 
                 out vec4 FragColor;
 
@@ -30,12 +29,6 @@
 
                 void main() 
                 {
-
-					float ambientStrength = 0.1;
-				    vec3 ambient = ambientStrength * lightColor;
-				    vec3 result = ambient * objectColor;
-				    FragColor = vec4(result, 1.0);
-
 	                FragColor = texture(texture0, texCoord);
                 }";
     }
