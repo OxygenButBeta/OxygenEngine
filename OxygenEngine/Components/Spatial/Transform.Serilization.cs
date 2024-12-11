@@ -3,7 +3,7 @@ using OpenTK.Mathematics;
 
 namespace OxygenEngineCore;
 
-public partial class Spatial : Component {
+public partial class Transform{
     public override Dictionary<string, string> Serialize() {
         Dictionary<string, string> dict = new();
         dict.Add("Enabled", Enabled.ToString());

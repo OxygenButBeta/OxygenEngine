@@ -6,7 +6,7 @@ namespace OxygenEngineCore;
 
 public partial class WorldObject {
     internal void Update(float deltaTime) {
-        spatial.OnTick(deltaTime);
+        Transform.OnTick(deltaTime);
         foreach (var component in Components)
         {
             if (component.Value.Enabled)
@@ -45,7 +45,7 @@ public partial class WorldObject {
     }
 
     public WorldObject(string name = "New World Object") {
-        spatial = new Spatial(this);
+        Transform = new Transform(this);
         Name = name;
     }
 }

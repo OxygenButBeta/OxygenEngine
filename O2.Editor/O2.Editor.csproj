@@ -13,8 +13,4 @@
       <ProjectReference Include="..\OxygenEngine\OxygenEngine.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Scripting\" />
-    </ItemGroup>
-
 </Project>

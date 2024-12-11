@@ -10,9 +10,7 @@ public class EditorLoop {
     public EditorLoop() {
         windows = new List<EditorWindow>();
         foreach (var type in AssemblySearch.FindAllDerivedTypesInAssembly<EditorWindow>(Assembly.GetCallingAssembly()))
-        {
             windows.Add((EditorWindow)Activator.CreateInstance(type));
-        }
     }
 
     public void UpdateCallbacks() {

@@ -25,7 +25,7 @@ public class WorldObjectDrawer : ContextDrawer {
             Target.Name = tname;
 
         ImGui.Text("Instance ID: " + Target.InstanceID);
-        SpatialContextDrawer.Draw(Target.spatial);
+        SpatialContextDrawer.Draw(Target.Transform);
 
 
         ImGui.Dummy(new Vector2(0, 20));

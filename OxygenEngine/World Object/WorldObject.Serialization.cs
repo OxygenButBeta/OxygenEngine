@@ -12,7 +12,7 @@ public partial class WorldObject : ISerializableEntity {
         {
             { "InstanceID", InstanceID.ToString() },
             { "IsStatic", IsStatic.ToString() },
-            { "spatial", JsonConvert.SerializeObject(spatial.Serialize()) }
+            { "spatial", JsonConvert.SerializeObject(Transform.Serialize()) }
         };
 
         var componentDict = new Dictionary<string, string>();
@@ -30,8 +30,8 @@ public partial class WorldObject : ISerializableEntity {
     public void Deserialize(Dictionary<string, string> data) {
         //  InstanceID = int.Parse(data["InstanceID"]);
         IsStatic = bool.Parse(data["IsStatic"]);
-        spatial = new Spatial(this);
-        spatial.Deserialize(JsonConvert.DeserializeObject<Dictionary<string, string>>(data["spatial"]));
+        Transform = new Transform(this);
+        Transform.Deserialize(JsonConvert.DeserializeObject<Dictionary<string, string>>(data["spatial"]));
 
         var componentDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(data["Components"]);
         foreach (var keyValuePair in componentDict)

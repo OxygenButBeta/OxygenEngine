@@ -1,7 +1,6 @@
-﻿
-namespace OxygenEngine.Serialization;
+﻿namespace OxygenEngine.Serialization;
 
 public interface ISerializableEntity {
-    Dictionary<string,string> Serialize();
-    void Deserialize(   Dictionary<string,string> data);
+    Dictionary<string, string> Serialize();
+    void Deserialize(Dictionary<string, string> data);
 }

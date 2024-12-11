@@ -18,9 +18,9 @@ namespace OxygenEngineRuntime.Editor.ContextDrawers.Contexts;
 
 public class CoreBehaviourContextDrawer {
     public static void Draw(Component component) {
-        if (component.GetType() == typeof(Spatial))
+        if (component.GetType() == typeof(Transform))
         {
-            SpatialContextDrawer.Draw(component as Spatial);
+            SpatialContextDrawer.Draw(component as Transform);
             return;
         }
 

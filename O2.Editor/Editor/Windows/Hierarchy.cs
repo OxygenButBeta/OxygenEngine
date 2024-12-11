@@ -9,8 +9,8 @@ public class Hierarchy : EditorWindow {
     WorldObjectDrawer worldObjectDrawer = new WorldObjectDrawer();
 
     public override void OnOpen() {
-        float panelWidth = 300f;
-        float panelHeight = 500f;
+        var panelWidth = 300f;
+        var panelHeight = 500f;
         ImGui.SetNextWindowPos(new Vector2(panelWidth, 0), ImGuiCond.Always);
         ImGui.SetNextWindowSize(new Vector2(panelWidth, panelHeight), ImGuiCond.Always);
     }
@@ -20,7 +20,7 @@ public class Hierarchy : EditorWindow {
 
         foreach (var worldObject in OxygenEngineCore.OxygenEngine.Instance.CurrentScene.worldObjects)
         {
-            if (ImGui.Selectable(worldObject.InstanceID.ToString()[..3], false))
+            if (ImGui.Selectable(worldObject.InstanceID.ToString()[..6], false))
             {
                 worldObjectDrawer.Target = worldObject;
                 Inspector.SelectedContext = worldObjectDrawer;

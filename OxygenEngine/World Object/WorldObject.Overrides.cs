@@ -1,8 +1,6 @@
 ﻿namespace OxygenEngineCore;
 
 public partial class WorldObject : IEquatable<WorldObject> {
-    
-
     public bool Equals(WorldObject other) {
         return this.InstanceID == other.InstanceID;
     }

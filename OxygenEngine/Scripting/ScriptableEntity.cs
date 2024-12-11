@@ -5,7 +5,7 @@ using OxygenEngineCore;
 namespace OxygenEngine.Scripting;
 
 public abstract partial class CoreBehaviour : Component {
-    protected Spatial spatial => worldObject.spatial;
+    protected Transform Transform => worldObject.Transform;
 
     internal override void OnComponentAdded() {
         // Begin linking
@@ -33,6 +33,4 @@ public abstract partial class CoreBehaviour : Component {
     public WorldObject Instantiate() {
         return OxygenEngineCore.OxygenEngine.Instance.CurrentScene.Instantiate();
     }
-
-
 }

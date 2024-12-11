@@ -2,7 +2,7 @@
 
 namespace OxygenEngineCore;
 
-public partial class Spatial {
+public partial class Transform {
     public Vector3 Position {
         get => m_position;
         set => HandlePos(value);

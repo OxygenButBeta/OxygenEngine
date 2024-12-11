@@ -7,17 +7,17 @@ using Vector2 = System.Numerics.Vector2;
 namespace OxygenEngineRuntime.Editor.ContextDrawers.Pre_Denifed_Drawers;
 
 internal static class SpatialContextDrawer {
-    public static void Draw(Spatial spatial) {
-        spatial.Position = Vector3ContextDrawer.Draw(spatial.Position, "Position",spatial.GetHashCode());
-        spatial.Rotation = QuaternionContextDrawer.Draw(spatial.Rotation, "Rotation");
-        spatial.Scale = Vector3ContextDrawer.Draw(spatial.Scale, "Scale");
+    public static void Draw(Transform transform) {
+        transform.Position = Vector3ContextDrawer.Draw(transform.Position, "Position",transform.GetHashCode());
+        transform.Rotation = QuaternionContextDrawer.Draw(transform.Rotation, "Rotation");
+        transform.Scale = Vector3ContextDrawer.Draw(transform.Scale, "Scale");
 
         ImGui.Dummy(new Vector2(0, 20));
         if (ImGui.Button("Reset Transform"))
         {
-            spatial.Position = Vector3.Zero;
-            spatial.Scale = Vector3.One;
-            spatial.Rotation = Quaternion.Identity;
+            transform.Position = Vector3.Zero;
+            transform.Scale = Vector3.One;
+            transform.Rotation = Quaternion.Identity;
         }
     }
 }

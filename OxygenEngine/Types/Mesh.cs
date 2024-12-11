@@ -25,15 +25,11 @@ public class Mesh : IAssetImporter<Mesh>, ISerializableEntity {
         Indices = mesh.GetUnsignedIndices();
         return this;
     }
-
-
     public Dictionary<string, string> Serialize() {
-        var dict = new Dictionary<string, string>();
-        dict.Add("ModelMetaGuid", ModelMetaGuid);
+        var dict = new Dictionary<string, string> { { "ModelMetaGuid", ModelMetaGuid } };
 
         return dict;
     }
-
     public void Deserialize(Dictionary<string, string> data) {
         ModelMetaGuid = data["ModelMetaGuid"];
         ImportAsset();

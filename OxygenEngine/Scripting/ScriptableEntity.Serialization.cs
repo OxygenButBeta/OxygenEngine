@@ -4,7 +4,7 @@ using OxygenEngine.Serialization;
 namespace OxygenEngine.Scripting;
 
 public abstract partial class CoreBehaviour {
-    [System.Serializable]
+    [Serializable]
     class KeyPair {
         public string name;
         public string value;

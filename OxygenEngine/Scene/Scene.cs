@@ -6,26 +6,18 @@ namespace OxygenEngineCore.Scene;
 /// <summary>
 /// The Scene entity is used to define a scene in the engine.
 /// </summary>
-public class Scene : ISerializableEntity {
+public class Scene(string name) : ISerializableEntity {
     public List<WorldObject> worldObjects = new();
-    public string Name { get; set; }
-
-    public Scene(string name) {
-        Name = name;
-    }
+    public string Name { get; set; } = name;
 
     internal void Begin() {
         foreach (var component in worldObjects.SelectMany(worldObject => worldObject.Components))
-        {
             component.Value.OnBegin();
-        }
     }
 
     internal void Update(float deltaTime) {
         foreach (var worldObject in worldObjects)
-        {
             worldObject.Update(deltaTime);
-        }
     }
 
     public Dictionary<string, string> Serialize() {

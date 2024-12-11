@@ -4,8 +4,8 @@ namespace OxygenEngine.AssetDatabase;
 
 public static class AssetDatabase {
     public static IEnumerable<MetaData> IndexedAssets => _assets;
-    private static List<MetaData> _assets = [];
     static bool IsInitialized;
+    static List<MetaData> _assets = [];
 
     public static void Init() {
         List<MetaData> assets = new(100);
@@ -15,13 +15,11 @@ public static class AssetDatabase {
 
         UpdateMetaDataLibrary(assets);
         IsInitialized = true;
-
     }
 
     internal static void AddAsset(MetaData asset) {
         if (_assets.Contains(asset))
             return;
-
         _assets.Add(asset);
     }
 
@@ -32,7 +30,7 @@ public static class AssetDatabase {
     public static MetaData GuidToMetaData(string guid) {
         if (!IsInitialized)
             Init();
-        
+
         return _assets.Find(a => a.FileGuid == guid);
     }
 }

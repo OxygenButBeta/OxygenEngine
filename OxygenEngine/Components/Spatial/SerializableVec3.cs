@@ -1,7 +1,7 @@
 ﻿using OpenTK.Mathematics;
 
 namespace OxygenEngineCore;
-[System.Serializable]
+[Serializable]
 
 public class SerializableVec3(Vector3 vec3) {
     public float x = vec3.X;
@@ -12,7 +12,7 @@ public class SerializableVec3(Vector3 vec3) {
         return new Vector3(x, y, z);
     }
 }
-[System.Serializable]
+[Serializable]
 public class SerializableQuat(Quaternion quat) {
     public float x = quat.X;
     public float y = quat.Y;

@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using OxygenEngine.Scripting;
-using OxygenEngine.Serialization;
+﻿using OxygenEngine.Serialization;
 
 namespace OxygenEngineCore;
 
@@ -36,7 +34,6 @@ public abstract class Component : ISerializableEntity {
     }
 
     internal virtual void OnBegin() {
-        
     }
 
     public abstract Dictionary<string, string> Serialize();

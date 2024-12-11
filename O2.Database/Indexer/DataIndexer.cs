@@ -16,10 +16,10 @@ public partial class DataIndexer : IAsyncEngineService<DataIndexer> {
 
     public DataIndexer() {
         List<MetaData> assets = new(100);
-        assets.AddRange(from file in Directory.GetFiles(@"Assets","*.*",SearchOption.AllDirectories)
+        assets.AddRange(from file in Directory.GetFiles(@"Assets", "*.*", SearchOption.AllDirectories)
             where TargetTypes.Contains(Path.GetExtension(file))
             select MetaCreator.GetMetaData(file, true));
-        
+
         AssetDatabase.UpdateMetaDataLibrary(assets);
     }
 
@@ -32,19 +32,14 @@ public partial class DataIndexer : IAsyncEngineService<DataIndexer> {
         while (!token.IsCancellationRequested)
         {
             List<MetaData> assets = new(100);
-            foreach (var file in Directory.GetFiles(@"Assets","*.*",SearchOption.AllDirectories))
-            {
-                if (!TargetTypes.Contains(Path.GetExtension(file)))
-                    continue;
-
-                if (!MetaCreator.IsMetaExist(file))
-                    assets.Add(MetaCreator.CreateMetaInternal(file));
-            }
+            assets.AddRange(from file in Directory.GetFiles(@"Assets", "*.*", SearchOption.AllDirectories)
+                where TargetTypes.Contains(Path.GetExtension(file))
+                where !MetaCreator.IsMetaExist(file)
+                select MetaCreator.CreateMetaInternal(file));
 
             if (assets.Count > 0)
                 AssetDatabase.UpdateMetaDataLibrary(assets);
             await Task.Delay(IndexInterval, token);
         }
     }
-
 }

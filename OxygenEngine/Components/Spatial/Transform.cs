@@ -2,7 +2,7 @@
 
 namespace OxygenEngineCore;
 
-public partial class Spatial : Component {
+public partial class Transform : Component {
     void HandleScale(Vector3 value) {
         m_scale = value;
         OnScaleChanged?.Invoke(m_scale, value);
@@ -18,7 +18,7 @@ public partial class Spatial : Component {
         OnPositionChanged?.Invoke(m_position, value);
     }
 
-    public Spatial(WorldObject worldObject) {
+    public Transform(WorldObject worldObject) {
         m_position = Vector3.Zero;
         m_rotation = Quaternion.Identity;
         m_scale = Vector3.One;

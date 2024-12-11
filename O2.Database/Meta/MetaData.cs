@@ -3,21 +3,18 @@
 namespace OxygenEngine.Database.Meta;
 
 [Serializable]
-public readonly record struct MetaData : IEqualityComparer<MetaData> {
-    public readonly string FileName;
-    public readonly string FilePath;
-    public readonly string FileExtension;
-    public readonly string FileGuid;
-    public readonly DateTime LastModified;
-
-    public MetaData(DateTime lastModified, string fileGuid, string fileExtension, string filePath, string fileName) {
-        LastModified = lastModified;
-        FileGuid = fileGuid;
-        FileExtension = fileExtension;
-        FilePath = filePath;
-        FileName = fileName;
-    }
-
+public readonly record struct MetaData(
+    DateTime LastModified,
+    string FileGuid,
+    string FileExtension,
+    string FilePath,
+    string FileName)
+    : IEqualityComparer<MetaData> {
+    public readonly string FileName = FileName;
+    public readonly string FilePath = FilePath;
+    public readonly string FileExtension = FileExtension;
+    public readonly string FileGuid = FileGuid;
+    public readonly DateTime LastModified = LastModified;
 
 
     public static readonly MetaData Empty = new MetaData(DateTime.MinValue, string.Empty, string.Empty, string.Empty,
