@@ -7,8 +7,8 @@ namespace OxygenEngineCore.Scene;
 /// The Scene entity is used to define a scene in the engine.
 /// </summary>
 public class Scene(string name) : ISerializableEntity {
-    public List<WorldObject> worldObjects = new();
-    public string Name { get; set; } = name;
+    public readonly List<WorldObject> worldObjects = new();
+    string Name { get; set; } = name;
 
     internal void Begin() {
         foreach (var component in worldObjects.SelectMany(worldObject => worldObject.Components))
@@ -22,12 +22,8 @@ public class Scene(string name) : ISerializableEntity {
 
     public Dictionary<string, string> Serialize() {
         Dictionary<string, string> dict = new() { { "Name", Name } };
-        var worldObjectsDict = new Dictionary<string, string>();
-        foreach (var worldObject in worldObjects)
-        {
-            worldObjectsDict.Add(worldObject.InstanceID.ToString(),
-                JsonConvert.SerializeObject(worldObject.Serialize()));
-        }
+        var worldObjectsDict = worldObjects.ToDictionary(worldObject => worldObject.InstanceID.ToString(),
+            worldObject => JsonConvert.SerializeObject(worldObject.Serialize()));
 
         dict.Add("WorldObjects", JsonConvert.SerializeObject(worldObjectsDict));
         return dict;
@@ -38,7 +34,7 @@ public class Scene(string name) : ISerializableEntity {
         if (!data.TryGetValue("WorldObjects", out var worldObjectsData))
             return;
 
-        Dictionary<string, string> WorldObjectsDict =
+        var WorldObjectsDict =
             JsonConvert.DeserializeObject<Dictionary<string, string>>(worldObjectsData);
 
         foreach (var worldObjectData in WorldObjectsDict)

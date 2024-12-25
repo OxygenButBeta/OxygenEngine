@@ -51,7 +51,7 @@ namespace OxygenEngineCore {
             up = Vector3.Normalize(Vector3.Cross(right, front));
         }
 
-        void InputController(KeyboardState input, MouseState mouse, FrameEventArgs e, GLRenderWindow gl) {
+        void InputController(KeyboardState input, MouseState mouse, FrameEventArgs e, IGL gl) {
             if (mouse.ScrollDelta.Y != 0)
             {
                 this.movingSpeed += mouse.ScrollDelta.Y;
@@ -108,7 +108,7 @@ namespace OxygenEngineCore {
             UpdateVectors();
         }
 
-        public void Update(FrameEventArgs e, GLRenderWindow gl) {
+        public void Update(FrameEventArgs e, IGL gl) {
             InputController(gl.KeyboardState, gl.MouseState, e, gl);
             mouse = gl.MouseState;
         }

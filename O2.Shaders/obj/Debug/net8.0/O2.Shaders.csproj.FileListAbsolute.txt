@@ -10,3 +10,15 @@ C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Shaders\obj\Debu
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Shaders\obj\Debug\net8.0\refint\O2.Shaders.dll
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.pdb
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Shaders\obj\Debug\net8.0\ref\O2.Shaders.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\bin\Debug\net8.0\O2.Shaders.deps.json
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\bin\Debug\net8.0\O2.Shaders.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\bin\Debug\net8.0\O2.Shaders.pdb
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.AssemblyInfoInputs.cache
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.AssemblyInfo.cs
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.csproj.CoreCompileInputs.cache
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.sourcelink.json
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\refint\O2.Shaders.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\O2.Shaders.pdb
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Shaders\obj\Debug\net8.0\ref\O2.Shaders.dll

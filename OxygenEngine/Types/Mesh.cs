@@ -27,7 +27,6 @@ public class Mesh : IAssetImporter<Mesh>, ISerializableEntity {
     }
     public Dictionary<string, string> Serialize() {
         var dict = new Dictionary<string, string> { { "ModelMetaGuid", ModelMetaGuid } };
-
         return dict;
     }
     public void Deserialize(Dictionary<string, string> data) {

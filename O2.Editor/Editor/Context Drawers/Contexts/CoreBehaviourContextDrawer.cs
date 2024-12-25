@@ -1,12 +1,9 @@
-﻿using System.Diagnostics;
-using System.Reflection;
-using ImGuiNET;
+﻿using ImGuiNET;
 using OpenTK.Mathematics;
 using OxygenEngine.Serialization;
 using OxygenEngineCore;
 using OxygenEngineCore.Primitive;
-using OxygenEngineCore.Primitive.Lib;
-using OxygenEngineRuntime.Editor.ContextDrawers.Pre_Denifed_Drawers;
+using OxygenEngineRuntime.Editor.ContextDrawers.PreDefinedDrawers;
 
 #pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
 
@@ -16,19 +13,19 @@ using OxygenEngineRuntime.Editor.ContextDrawers.Pre_Denifed_Drawers;
 
 namespace OxygenEngineRuntime.Editor.ContextDrawers.Contexts;
 
+// ReSharper disable once ClassNeverInstantiated.Global
 public class CoreBehaviourContextDrawer {
     public static void Draw(Component component) {
         if (component.GetType() == typeof(Transform))
         {
-            SpatialContextDrawer.Draw(component as Transform);
+            var transform = (Transform)component;
+            SpatialContextDrawer.Draw(ref transform);
             return;
         }
 
         if (component.GetType() == typeof(MeshRenderer))
-        {
             (component as MeshRenderer).Draw();
  
-        }
 
         foreach (var serializedVariable in SerializedFieldAttribute.GetAllSerializedVariables(component))
         {
@@ -74,7 +71,7 @@ public class CoreBehaviourContextDrawer {
             if (type == typeof(int))
             {
                 ImGui.Text(serializedVariable.Name);
-                int value = (int)serializedVariable.GetValue(component);
+                var value = (int)serializedVariable.GetValue(component);
                 if (ImGui.InputInt(serializedVariable.Name, ref value))
                     serializedVariable.SetValue(component, value);
             }
@@ -82,7 +79,7 @@ public class CoreBehaviourContextDrawer {
             if (type == typeof(bool))
             {
                 ImGui.Text(serializedVariable.Name);
-                bool value = (bool)serializedVariable.GetValue(component);
+                var value = (bool)serializedVariable.GetValue(component);
                 ImGui.Checkbox(serializedVariable.Name, ref value);
                 serializedVariable.SetValue(component, value);
             }

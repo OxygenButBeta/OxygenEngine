@@ -1,7 +1,9 @@
 ﻿using OxygenEngine.Database.Meta;
 
-namespace OxygenEngine.AssetDatabase;
-
+namespace OxygenEngine.AssetDatabase; 
+///// <summary>
+///  The AssetDatabase class is a static class that provides a way to access the assets in the project.
+/// </summary>
 public static class AssetDatabase {
     public static IEnumerable<MetaData> IndexedAssets => _assets;
     static bool IsInitialized;

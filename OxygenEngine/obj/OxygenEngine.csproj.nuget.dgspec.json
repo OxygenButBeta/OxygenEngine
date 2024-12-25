@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {}
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj",
         "projectName": "O2.Assembly",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\O2.Common.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\O2.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\O2.Common.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\O2.Common.csproj",
         "projectName": "O2.Common",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\O2.Common.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\O2.Common.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,7 +91,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +108,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -130,18 +130,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\O2.Database.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\O2.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\O2.Database.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\O2.Database.csproj",
         "projectName": "O2.Database",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\O2.Database.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\O2.Database.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,15 +156,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\O2.Common.csproj": {
-                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Common\\O2.Common.csproj"
+              "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\O2.Common.csproj": {
+                "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Common\\O2.Common.csproj"
               }
             }
           }
@@ -178,7 +177,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -205,18 +205,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj",
         "projectName": "O2.Serialization",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -231,7 +231,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -249,7 +248,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -270,18 +270,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj",
         "projectName": "O2.Shaders",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -296,7 +296,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -314,7 +313,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -335,18 +335,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {
+    "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj",
+        "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj",
         "projectName": "OxygenEngine",
-        "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj",
+        "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj",
         "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\OxygenEngine\\obj\\",
+        "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -361,24 +361,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
-                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj"
+              "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
+                "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj"
               },
-              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\O2.Database.csproj": {
-                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Database\\O2.Database.csproj"
+              "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\O2.Database.csproj": {
+                "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Database\\O2.Database.csproj"
               },
-              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj": {
-                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj"
+              "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj": {
+                "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Serialization\\O2.Serialization.csproj"
               },
-              "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj": {
-                "projectPath": "C:\\Users\\suley\\OneDrive\\Desktop\\HINW_FristBuild\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj"
+              "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj": {
+                "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Shaders\\O2.Shaders.csproj"
               }
             }
           }
@@ -392,7 +391,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -417,10 +417,6 @@
             "StirlingLabs.Assimp.Net": {
               "target": "Package",
               "version": "[23.4.1, )"
-            },
-            "StirlingLabs.assimp.native.win-x64": {
-              "target": "Package",
-              "version": "[5.2.5.4, )"
             }
           },
           "imports": [
@@ -439,7 +435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

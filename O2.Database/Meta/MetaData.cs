@@ -2,6 +2,15 @@
 
 namespace OxygenEngine.Database.Meta;
 
+
+/// <summary>
+/// Simple struct that holds metadata for a file.
+/// </summary>
+/// <param name="LastModified"></param>
+/// <param name="FileGuid"></param>
+/// <param name="FileExtension"></param>
+/// <param name="FilePath"></param>
+/// <param name="FileName"></param>
 [Serializable]
 public readonly record struct MetaData(
     DateTime LastModified,

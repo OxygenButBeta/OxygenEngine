@@ -2,6 +2,9 @@
 
 namespace OxygenEngine.Database.Meta;
 
+/// <summary>
+/// This class is responsible for creating and managing metadata for files. 
+/// </summary>
 public static class MetaCreator {
     public static MetaData CreateMetaInternal(string path) {
         if (IsMetaExist(path))

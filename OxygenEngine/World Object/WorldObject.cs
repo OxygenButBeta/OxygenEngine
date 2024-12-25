@@ -39,9 +39,7 @@ public partial class WorldObject {
     }
 
     internal Component GetComponent(Type type) {
-        if (!Components.ContainsKey(type))
-            return null;
-        return Components[type];
+        return Components.GetValueOrDefault(type);
     }
 
     public WorldObject(string name = "New World Object") {

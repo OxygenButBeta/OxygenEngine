@@ -4,9 +4,12 @@ using OxygenEngine.Database.Meta;
 
 namespace OxygenEngine.AssetDatabase;
 
-public partial class DataIndexer : IAsyncEngineService<DataIndexer> {
+/// <summary>
+/// DataIndexer is a service that indexes the assets in the project directory.
+/// </summary>
+public sealed partial  class DataIndexer : IAsyncEngineService<DataIndexer> {
     readonly CancellationToken token;
-    const int IndexInterval = 1000;
+    const int IndexInterval = 3000;
 
     public DataIndexer RaiseService(CancellationToken token) {
         if (!Directory.Exists("Assets"))
@@ -28,6 +31,9 @@ public partial class DataIndexer : IAsyncEngineService<DataIndexer> {
         Task.Run(IndexDataAsync, token);
     }
 
+    /// <summary>
+    /// Repetitively indexes the assets in the project directory.
+    /// </summary>
     async Task IndexDataAsync() {
         while (!token.IsCancellationRequested)
         {

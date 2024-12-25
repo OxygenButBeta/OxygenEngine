@@ -9,11 +9,11 @@ public partial class MeshRenderer {
         switch (m_Rendering)
         {
             case true when !active:
-                OxygenEngine.GlRenderEngine.DetachFromDrawQueue(this);
+                OxygenEngine.IGL.DetachFromDrawQueue(this);
                 m_Rendering = false;
                 break;
             case false when active:
-                OxygenEngine.GlRenderEngine.AttachToDrawQueue(this);
+                OxygenEngine.IGL.AttachToDrawQueue(this);
                 break;
         }
 
@@ -46,7 +46,7 @@ public partial class MeshRenderer {
         texture = texture ??= new Texture();
         texture.Bind();
 
-        OxygenEngine.GlRenderEngine.AttachToDrawQueue(this);
+        OxygenEngine.IGL.AttachToDrawQueue(this);
         m_Rendering = true;
     }
 }

@@ -10,3 +10,15 @@ C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Assembly\obj\Deb
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Assembly\obj\Debug\net8.0\refint\O2.Assembly.dll
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.pdb
 C:\Users\suley\OneDrive\Desktop\HINW_FristBuild\OxygenEngine\O2.Assembly\obj\Debug\net8.0\ref\O2.Assembly.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\bin\Debug\net8.0\O2.Assembly.deps.json
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\bin\Debug\net8.0\O2.Assembly.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\bin\Debug\net8.0\O2.Assembly.pdb
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.AssemblyInfoInputs.cache
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.AssemblyInfo.cs
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.csproj.CoreCompileInputs.cache
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.sourcelink.json
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\refint\O2.Assembly.dll
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\O2.Assembly.pdb
+C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Assembly\obj\Debug\net8.0\ref\O2.Assembly.dll

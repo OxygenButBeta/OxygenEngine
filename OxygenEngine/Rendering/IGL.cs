@@ -9,28 +9,30 @@ using OxygenEngineCore.Rendering;
 
 
 namespace OxygenEngineCore {
-    public class GLRenderWindow : GameWindow {
-        public event Action<FrameEventArgs, GLRenderWindow> OnUpdate;
-        public event Action<FrameEventArgs, GLRenderWindow> EarlyUpdate;
-        public event Action<FrameEventArgs, GLRenderWindow> LateUpdate;
+    /// <summary>
+    ///  The main class for the OpenGL rendering API
+    ///  This class is responsible for rendering the scene and handling the rendering pipeline
+    /// </summary>
+    public class IGL : GameWindow {
+        public event Action<FrameEventArgs, IGL> OnUpdate;
+        public event Action<FrameEventArgs, IGL> EarlyUpdate;
+        public event Action<FrameEventArgs, IGL> LateUpdate;
         public event Action OverlayUpdate;
-        public event Action<GLRenderWindow> OnAwake;
-        public List<IDrawCallElement> DrawCallElements;
+        public event Action<IGL> OnAwake;
+
         Shader generalShader;
         Camera m_RenderCamera;
         int width, height;
-        bool m_loaded;
+        readonly List<IDrawCallElement> DrawCallElements;
+        readonly bool m_init;
         readonly ImGuiController imGuiController;
 
-        public void AttachToDrawQueue(IDrawCallElement drawCallElement) {
-            DrawCallElements.Add(drawCallElement);
-        }
+        void bindInput(TextInputEventArgs obj) => imGuiController.PressChar(obj.AsString[0]);
+        public void AttachToDrawQueue(IDrawCallElement drawCallElement) => DrawCallElements.Add(drawCallElement);
+        public void DetachFromDrawQueue(IDrawCallElement drawCallElement) => DrawCallElements.Remove(drawCallElement);
+        protected override void OnUnload() => DrawCallElements.ForEach(x => x.Dispose());
 
-        public void DetachFromDrawQueue(IDrawCallElement drawCallElement) {
-            DrawCallElements.Remove(drawCallElement);
-        }
-
-        public GLRenderWindow(int width, int height) : base(GameWindowSettings.Default,
+        public IGL(int width, int height) : base(GameWindowSettings.Default,
             NativeWindowSettings.Default) {
             this.width = width;
             this.height = height;
@@ -39,26 +41,22 @@ namespace OxygenEngineCore {
             CenterWindow(new Vector2i(width, height));
             imGuiController = new ImGuiController(width, height);
             TextInput += bindInput;
-            m_loaded = true;
+            m_init = true;
         }
 
-        void bindInput(TextInputEventArgs obj) {
-            imGuiController.PressChar(obj.AsString[0]);
-        }
 
         protected override void OnResize(ResizeEventArgs e) {
             base.OnResize(e);
             GL.Viewport(0, 0, e.Width, e.Height);
             this.width = e.Width;
             this.height = e.Height;
-            if (m_loaded)
+            if (m_init)
             {
                 imGuiController.WindowResized(this.width, height);
             }
         }
 
         protected override void OnLoad() {
-            base.OnLoad();
 
             generalShader = new Shader(ShaderLoader.VertexShader, ShaderLoader.FragmentShader);
 
@@ -76,15 +74,11 @@ namespace OxygenEngineCore {
             OnAwake?.Invoke(this);
         }
 
-        protected override void OnUnload() {
-            base.OnUnload();
-            DrawCallElements.ForEach(x => x.Dispose());
-        }
 
         protected override void OnRenderFrame(FrameEventArgs args) {
             base.OnRenderFrame(args);
-            // Background color
             GL.ClearColor(0.0f, 0.4f, 0.7f, 1f);
+            
             // Clear the color buffer
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit |
                      ClearBufferMask.StencilBufferBit);
@@ -99,28 +93,18 @@ namespace OxygenEngineCore {
 
             GL.UniformMatrix4(viewLocation, true, ref view);
             GL.UniformMatrix4(projectionLocation, true, ref projection);
-            
+
 
             foreach (var drawCallElement in DrawCallElements)
             {
                 drawCallElement.Vao.Bind();
                 drawCallElement.DrawCall(generalShader);
             }
-            Color4 coral = new Color4(1.0f, 0.5f, 0.31f, 1.0f);
 
-            Color4 result = new(0.33f, 0.21f, 0.06f, 1.0f);
-            
             imGuiController.Update(this, (float)args.Time);
             OverlayUpdate?.Invoke();
             m_RenderCamera.FrameUpdate();
             imGuiController.Render();
-
-            #region light
-
-
-            #endregion
-   
-
             ImGuiController.CheckGLError("End of frame");
             Context.SwapBuffers();
         }

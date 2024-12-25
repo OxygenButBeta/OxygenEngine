@@ -1,6 +1,6 @@
 ﻿namespace OxygenEngine.AssetDatabase;
 
-public partial class DataIndexer {
+public sealed partial  class DataIndexer {
  public  static readonly string[] TargetTypes =
     [
         ".jpeg",

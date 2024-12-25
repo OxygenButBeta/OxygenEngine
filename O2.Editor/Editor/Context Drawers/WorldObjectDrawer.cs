@@ -3,7 +3,7 @@ using ImGuiNET;
 using OpenTK.Mathematics;
 using OxygenEngineCore;
 using OxygenEngineRuntime.Editor.ContextDrawers.Contexts;
-using OxygenEngineRuntime.Editor.ContextDrawers.Pre_Denifed_Drawers;
+using OxygenEngineRuntime.Editor.ContextDrawers.PreDefinedDrawers;
 using Runtime.Editor;
 using Vector2 = System.Numerics.Vector2;
 
@@ -25,7 +25,8 @@ public class WorldObjectDrawer : ContextDrawer {
             Target.Name = tname;
 
         ImGui.Text("Instance ID: " + Target.InstanceID);
-        SpatialContextDrawer.Draw(Target.Transform);
+        var transform = Target.Transform;
+        SpatialContextDrawer.Draw(ref transform);
 
 
         ImGui.Dummy(new Vector2(0, 20));
@@ -34,6 +35,7 @@ public class WorldObjectDrawer : ContextDrawer {
             ImGui.Separator();
             foreach (var component in Target.Components)
             {
+                ImGui.Dummy(new Vector2(0, 30));
                 ImGui.Text(component.Key.Name);
                 CoreBehaviourContextDrawer.Draw(component.Value);
             }
@@ -54,13 +56,9 @@ public class WorldObjectDrawer : ContextDrawer {
         foreach (var component in ComponentUtility.ComponentTypesInAssembly(Assembly.GetCallingAssembly()))
         {
             if (Target.GetComponent(typeof(Component)) != null)
-            {
                 continue;
-            }
             if (ImGui.Selectable(component.Name))
-            {
                 AddComponent(component);
-            }
         }
 
         ImGui.EndChild();

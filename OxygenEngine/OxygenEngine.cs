@@ -2,20 +2,19 @@
 using OxygenEngine.AssetDatabase;
 using OxygenEngineCore.InputSystem;
 
-
 namespace OxygenEngineCore;
 
 public class OxygenEngine {
     public event Action<OxygenEngine> OnEngineStart;
     public event Action<float> OnEngineUpdate;
     public event Action OnUiOverlayUpdate;
-    public static GLRenderWindow GlRenderEngine { get; private set; }
-    readonly CancellationTokenSource _asyncEngineServiceToken = new();
+    public static IGL IGL { get; private set; }
     public static OxygenEngine Instance { get; private set; }
     public Scene.Scene CurrentScene { get; set; } = new("Default Scene");
 
+    
     readonly int width, height;
-
+    readonly CancellationTokenSource _asyncEngineServiceToken = new();
     public OxygenEngine(int width = 1280, int height = 720) {
         Instance = this;
         this.width = width;
@@ -25,14 +24,15 @@ public class OxygenEngine {
     public void StartEngine() {
         AssetDatabase.Init();
         EngineService.RaiseService<DataIndexer>(_asyncEngineServiceToken.Token);
-        GlRenderEngine = new(width, height);
-        GlRenderEngine.OnUpdate += (arg, gl) => {
+        
+        IGL = new(width, height);
+        IGL.OnUpdate += (arg, gl) => {
             OnEngineUpdate?.Invoke((float)arg.Time);
             CurrentScene.Update((float)arg.Time);
         };
-        GlRenderEngine.EarlyUpdate += (fa, gl) => Input.Update(gl);
-        GlRenderEngine.OnAwake += (window) => { OnEngineStart.Invoke(this); };
-        GlRenderEngine.OverlayUpdate += () => OnUiOverlayUpdate.Invoke();
-        GlRenderEngine.Run();
+        IGL.EarlyUpdate += (fa, gl) => Input.Update(gl);
+        IGL.OnAwake += (window) => { OnEngineStart.Invoke(this); };
+        IGL.OverlayUpdate += () => OnUiOverlayUpdate.Invoke();
+        IGL.Run();
     }
 }
