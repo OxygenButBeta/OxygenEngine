@@ -8,6 +8,31 @@ This is an OpenGL-based game engine that I’ve been developing in my free time 
 
 ### 1. Component System
 The engine includes a `CoreBehaviour` base class, inspired by Unity’s component system. It supports callbacks like `Start`, `Update`, and `OnDisable`. Components derived from this base class can be active at runtime and attached to objects in the editor.
+```csharp
+public class CharacterController : CoreBehaviour {
+    /// Marked as serialized field so it can be edited in the inspector
+    [SerializedField] float speed = 1.0f;
+
+    /// Called every frame by the engine
+    internal override void OnTick(float deltaTime) {
+        var nextPos = transform.Position;
+        if (Input.IsKeyDown(Key.Up))
+            nextPos.Z -= speed * deltaTime;
+        if (Input.IsKeyDown(Key.Down))
+            nextPos.Z += speed * deltaTime;
+        if (Input.IsKeyDown(Key.Left))
+            nextPos.X -= speed * deltaTime;
+        if (Input.IsKeyDown(Key.Right))
+            nextPos.X += speed * deltaTime;
+        transform.Position = nextPos;
+    }
+
+    internal override void OnActiveStateChange(bool active) {
+        // Will be called when the Component is enabled or disabled
+    }
+}
+```
+Additionally, all types derived from `CoreBehaviour` within the editor assembly are automatically detected at runtime and can be added as components to objects without needing manual registration or linking.
 
 ### 2. Asset Database
 Similar to Unity, the engine creates `.meta` files for assets. GUID-based operations allow for safe object reference management, including serialization, file saving, and loading.
