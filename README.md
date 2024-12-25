@@ -1,6 +1,6 @@
 ![{D031B2DB-BDC3-4412-B985-A1B02281B20C}](https://github.com/user-attachments/assets/2368927e-3931-4b76-b787-434c99bad1ae)
 
-# Oxygen Game Engine (C# & OpenTK)
+# Oxygen Engine (C# & OpenTK)
 
 This is an OpenGL-based game engine that I’ve been developing in my free time using C# and OpenTK. The engine is inspired by Unity and is still in the early stages of development. Currently, one of the main challenges is the lack of shading, but I plan to address this soon. In the video linked below.
 
