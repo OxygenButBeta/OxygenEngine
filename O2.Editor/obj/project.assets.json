@@ -403,7 +403,8 @@
           "O2.Shaders": "1.0.0",
           "OpenTK": "4.8.2",
           "StbImageSharp": "2.30.15",
-          "StirlingLabs.Assimp.Net": "23.4.1"
+          "StirlingLabs.Assimp.Net": "23.4.1",
+          "StirlingLabs.assimp.native.win-x64": "5.2.5.4"
         },
         "compile": {
           "bin/placeholder/OxygenEngine.dll": {}

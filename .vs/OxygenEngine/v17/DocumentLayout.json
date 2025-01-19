@@ -1,26 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\",
+  "WorkspaceRootPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|c:\\users\\suley\\source\\repos\\oxygenengine\\oxygenengine\\oxygenengine.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|solutionrelative:oxygenengine\\oxygenengine.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|c:\\users\\suley\\source\\repos\\oxygenengine\\oxygenengine\\core\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|solutionrelative:oxygenengine\\core\\renderwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Core\\RenderWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|C:\\Users\\suley\\source\\repos\\OxygenEngine\\oxygenengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.Core.csproj|solutionrelative:oxygenengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\ShaderLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}|OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj|C:\\Users\\suley\\source\\repos\\OxygenEngine\\oxygenengine.shaders\\shaderloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B89710-6ADB-4CBE-ACFD-6CD63C4CEE1A}|OxygenEngine.Shaders\\OxygenEngine.Shaders.csproj|solutionrelative:oxygenengine.shaders\\shaderloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.csproj|C:\\Users\\suley\\source\\repos\\OxygenEngine\\oxygenengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B40DC979-3656-48D0-920B-D2C493351623}|OxygenEngine\\OxygenEngine.csproj|solutionrelative:oxygenengine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,61 +30,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OxygenEngine.Core",
+              "Title": "OxygenEngine.Core.csproj",
               "DocumentMoniker": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
-              "RelativeDocumentMoniker": "OxygenEngine\\OxygenEngine.Core.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
               "ToolTip": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
-              "RelativeToolTip": "OxygenEngine\\OxygenEngine.Core.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAVAAAA",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\OxygenEngine.Core.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-19T23:36:35.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T23:36:35.065Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "RenderWindow.cs",
               "DocumentMoniker": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Core\\RenderWindow.cs",
-              "RelativeDocumentMoniker": "OxygenEngine\\Core\\RenderWindow.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Core\\RenderWindow.cs",
               "ToolTip": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Core\\RenderWindow.cs",
-              "RelativeToolTip": "OxygenEngine\\Core\\RenderWindow.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Core\\RenderWindow.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAAAFQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T00:17:16.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T00:17:16.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ShaderLoader.cs",
               "DocumentMoniker": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\ShaderLoader.cs",
-              "RelativeDocumentMoniker": "OxygenEngine.Shaders\\ShaderLoader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\ShaderLoader.cs",
               "ToolTip": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\ShaderLoader.cs",
-              "RelativeToolTip": "OxygenEngine.Shaders\\ShaderLoader.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine.Shaders\\ShaderLoader.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T19:41:28.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
-              "RelativeDocumentMoniker": "OxygenEngine\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
               "ToolTip": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
-              "RelativeToolTip": "OxygenEngine\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T18:42:27.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
-              "RelativeDocumentMoniker": "OxygenEngine\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
               "ToolTip": "C:\\Users\\suley\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
-              "RelativeToolTip": "OxygenEngine\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\OxygenEngine\\OxygenEngine\\Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T19:40:00.211Z"
