@@ -403,8 +403,7 @@
           "O2.Shaders": "1.0.0",
           "OpenTK": "4.8.2",
           "StbImageSharp": "2.30.15",
-          "StirlingLabs.Assimp.Net": "23.4.1",
-          "StirlingLabs.assimp.native.win-x64": "5.2.5.4"
+          "StirlingLabs.Assimp.Net": "23.4.1"
         },
         "compile": {
           "bin/placeholder/OxygenEngine.dll": {}
@@ -861,11 +860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\O2.Editor.csproj",
+      "projectUniqueName": "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\O2.Editor.csproj",
       "projectName": "O2.Editor",
-      "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\O2.Editor.csproj",
+      "projectPath": "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\O2.Editor.csproj",
       "packagesPath": "C:\\Users\\suley\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\obj\\",
+      "outputPath": "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\O2.Editor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -886,11 +885,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
-              "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj"
+            "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj": {
+              "projectPath": "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\O2.Assembly\\O2.Assembly.csproj"
             },
-            "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {
-              "projectPath": "C:\\Users\\suley\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj"
+            "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj": {
+              "projectPath": "C:\\Users\\suley\\OneDrive\\Documents\\GitHub\\OxygenEngine\\OxygenEngine\\OxygenEngine.csproj"
             }
           }
         }
@@ -905,7 +904,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -926,7 +925,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

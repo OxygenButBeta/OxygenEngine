@@ -6,7 +6,7 @@ public static class MetaUtility {
         return AppDomain.CurrentDomain.BaseDirectory + @"\" + path.FilePath;
     }
 
-    public static string AssetFolderPath() {
+    public static string  AssetFolderPath() {
         return AppDomain.CurrentDomain.BaseDirectory + @"\Assets\";
     }
 }

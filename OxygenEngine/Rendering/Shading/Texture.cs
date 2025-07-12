@@ -14,6 +14,7 @@ public sealed class Texture : ISerializableEntity, IAssetImporter<Texture> {
     ImageResult texture;
 
     void gpuTexture() {
+
         ID = GL.GenTexture();
          texture = ImageResult.FromStream(
             File.OpenRead((GuidToMetaData(textureMetaGuid).GetExactPathFromMeta())),

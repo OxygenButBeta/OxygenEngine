@@ -22,3 +22,15 @@ C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\refint\O2.Serialization.dll
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.pdb
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\ref\O2.Serialization.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\bin\Debug\net8.0\O2.Serialization.deps.json
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\bin\Debug\net8.0\O2.Serialization.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\bin\Debug\net8.0\O2.Serialization.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.sourcelink.json
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\refint\O2.Serialization.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\O2.Serialization.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Serialization\obj\Debug\net8.0\ref\O2.Serialization.dll

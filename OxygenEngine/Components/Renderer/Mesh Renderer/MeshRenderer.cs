@@ -7,7 +7,6 @@ using OxygenEngine.Serialization;
 
 namespace OxygenEngineCore.Primitive;
 
-
 public partial class MeshRenderer : Renderer, IDisposable {
     [SerializedField] Mesh mesh;
     bool m_meshImported;
@@ -25,12 +24,9 @@ public partial class MeshRenderer : Renderer, IDisposable {
         if (!Enabled && m_meshImported)
             return;
         shader.Bind();
-        if (!worldObject.IsStatic)
-        {
-            var ScaledTransform = TransformMatrix * ScaleMatrix;
-            var offset = GL.GetUniformLocation(shader.ID, "transform");
-            GL.UniformMatrix4(offset, true, ref ScaledTransform);
-        }
+        var ScaledTransform = TransformMatrix * ScaleMatrix;
+        var offset = GL.GetUniformLocation(shader.ID, "transform");
+        GL.UniformMatrix4(offset, true, ref ScaledTransform);
 
         Vao.Bind();
         GL.DrawElements(BeginMode.Triangles, mesh.Indices.Length, DrawElementsType.UnsignedInt, 0);

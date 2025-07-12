@@ -22,3 +22,15 @@ C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Commo
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\refint\O2.Common.dll
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.pdb
 C:\Users\suley\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\ref\O2.Common.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\bin\Debug\net8.0\O2.Common.deps.json
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\bin\Debug\net8.0\O2.Common.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\bin\Debug\net8.0\O2.Common.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.AssemblyInfoInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.AssemblyInfo.cs
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.csproj.CoreCompileInputs.cache
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.sourcelink.json
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\refint\O2.Common.dll
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\O2.Common.pdb
+C:\Users\suley\OneDrive\Documents\GitHub\OxygenEngine\O2.Common\obj\Debug\net8.0\ref\O2.Common.dll

@@ -16,8 +16,7 @@
           "O2.Shaders": "1.0.0",
           "OpenTK": "4.8.2",
           "StbImageSharp": "2.30.15",
-          "StirlingLabs.Assimp.Net": "23.4.1",
-          "StirlingLabs.assimp.native.win-x64": "5.2.5.4"
+          "StirlingLabs.Assimp.Net": "23.4.1"
         },
         "runtime": {
           "OxygenEngine.dll": {}
@@ -270,7 +269,7 @@
       "O2.Assembly/1.0.0": {
         "runtime": {
           "O2.Assembly.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -278,7 +277,7 @@
       "O2.Common/1.0.0": {
         "runtime": {
           "O2.Common.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -290,7 +289,7 @@
         },
         "runtime": {
           "O2.Database.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -298,7 +297,7 @@
       "O2.Serialization/1.0.0": {
         "runtime": {
           "O2.Serialization.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -306,7 +305,7 @@
       "O2.Shaders/1.0.0": {
         "runtime": {
           "O2.Shaders.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
