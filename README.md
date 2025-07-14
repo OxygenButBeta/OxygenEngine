@@ -30,7 +30,7 @@ public class CharacterController : CoreBehaviour {
         // Called when the component is enabled or disabled
     }
 }
-
+```
 ## 📁 Asset Database
 
 - Generates `.meta` files like Unity.  
