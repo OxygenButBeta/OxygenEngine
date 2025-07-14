@@ -4,6 +4,7 @@
 ⚠️ One current challenge: **No shading support yet** — but it’s coming soon!
 
 ---
+![{D031B2DB-BDC3-4412-B985-A1B02281B20C}](https://github.com/user-attachments/assets/2368927e-3931-4b76-b787-434c99bad1ae)
 
 ### ⚙️ Core Features
 
@@ -72,7 +73,6 @@ public class CharacterController : CoreBehaviour {
 
 ---
 
-## 🛣️ Roadmap
 
 - ✨ Add shading support  
 - 🚧 Implement occlusion culling & GPU instancing  
