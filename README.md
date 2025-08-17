@@ -1,51 +1,80 @@
+# 🚀 Oxygen Engine (C# & OpenTK)
+
+**Oxygen Engine** is an OpenGL-based game engine developed using **C#** and **OpenTK**. Inspired by **Unity**, it’s currently in early development stages.  
+⚠️ One current challenge: **No shading support yet** — but it’s coming soon!
+
+---
 ![{D031B2DB-BDC3-4412-B985-A1B02281B20C}](https://github.com/user-attachments/assets/2368927e-3931-4b76-b787-434c99bad1ae)
 
-# Oxygen Engine (C# & OpenTK)
+### ⚙️ Core Features
 
-This is an OpenGL-based game engine that I’ve been developing in my free time using C# and OpenTK. The engine is inspired by Unity and is still in the early stages of development. Currently, one of the main challenges is the lack of shading, but I plan to address this soon. In the video linked below.
+🧩 **Component System**  
+- Inspired by Unity’s component architecture with a `CoreBehaviour` base class.  
+- Supports lifecycle callbacks like `Start`, `Update`, and `OnDisable`.  
+- Components derived from `CoreBehaviour` can be attached to objects in-editor and activated at runtime.  
+- Automatic runtime detection of all `CoreBehaviour`-derived types — no manual registration needed!  
 
-## Current Features
-
-### 1. Component System
-The engine includes a `CoreBehaviour` base class, inspired by Unity’s component system. It supports callbacks like `Start`, `Update`, and `OnDisable`. Components derived from this base class can be active at runtime and attached to objects in the editor.
 ```csharp
 public class CharacterController : CoreBehaviour {
-    /// Marked as serialized field so it can be edited in the inspector
-    [SerializedField] float speed = 1.0f;
+    [SerializedField] 
+    float speed = 1.0f;
 
-    /// Called every frame by the engine
     internal override void OnTick(float deltaTime) {
         var nextPos = transform.Position;
         if (Input.IsKeyDown(Key.Up))
             nextPos.Z -= speed * deltaTime;
-        if (Input.IsKeyDown(Key.Down))
-            nextPos.Z += speed * deltaTime;
-        if (Input.IsKeyDown(Key.Left))
-            nextPos.X -= speed * deltaTime;
-        if (Input.IsKeyDown(Key.Right))
-            nextPos.X += speed * deltaTime;
+         // Handle Other Directions.
         transform.Position = nextPos;
     }
 
     internal override void OnActiveStateChange(bool active) {
-        // Will be called when the Component is enabled or disabled
+        // Called when the component is enabled or disabled
     }
 }
 ```
-Additionally, all types derived from `CoreBehaviour` within the editor assembly are automatically detected at runtime and can be added as components to objects without needing manual registration or linking.
+## 📁 Asset Database
 
-### 2. Asset Database
-Similar to Unity, the engine creates `.meta` files for assets. GUID-based operations allow for safe object reference management, including serialization, file saving, and loading.
+- Generates `.meta` files like Unity.  
+- Uses GUIDs to safely serialize, save, and load assets.
 
-### 3. Input System
-The engine features a classic input system, similar to Unity’s, with functions like `GetKey`, `KeyDown`, etc., to handle user input.
+---
 
-### 4. Batching and Rendering
-Meshes that need to be rendered are queued in the render pipeline. When the main object (similar to Unity's `GameObject`, here called `WorldObject`) is disabled, its mesh is automatically removed from the render queue. Static objects are only recalculated once, as their positions do not change. Planned features include occlusion culling, GPU instancing, and material optimizations.
+## 🎮 Input System
 
-### 5. Editor
-The engine uses an ImGui-based UI system for its editor. Each editor tool, derived from the `EditorWindow` base class, is called every frame, with the `Draw` method used to build the UI. Similar to Unity’s Property Drawer system, custom drawers for types such as boolean, string, `Vector3`, and `Quaternion` can be written and edited through the UI.
+- Classic input API similar to Unity (`GetKey`, `KeyDown`, etc.) for handling user input.
 
-### 6. Serialization
-With the `[SerializeField]` attribute, fields can be made editable in the editor. Scene and object parameters are serialized to files, allowing for saving and loading of game data.
+---
 
+## 🎨 Batching & Rendering
+
+- Meshes queued for rendering in the pipeline.  
+- Disabling `WorldObject` removes its mesh automatically.  
+- Static objects recalculated once only.  
+
+### Planned Features:  
+- 🔲 Occlusion Culling  
+- 🖥️ GPU Instancing  
+- 🎨 Material Optimizations  
+
+---
+
+## 🛠️ Editor
+
+- Built with ImGui UI system.  
+- Editor tools derive from `EditorWindow` and use the `Draw` method to build UI every frame.  
+- Supports custom property drawers (`bool`, `string`, `Vector3`, `Quaternion`, etc.) similar to Unity.
+
+---
+
+## 💾 Serialization
+
+- `[SerializeField]` attributes make fields editable in the editor.  
+- Scene and object parameters serialize to files for save/load functionality.
+
+---
+
+
+- ✨ Add shading support  
+- 🚧 Implement occlusion culling & GPU instancing  
+- 🎨 Enhance material and asset optimization  
+- 🛠️ Expand editor features and tooling
